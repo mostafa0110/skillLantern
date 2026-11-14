@@ -1,0 +1,27 @@
+{
+  "state": "draft",
+  "title": "Skill discovery claim: partial TikTok evidence review",
+  "sourceKind": "workflow",
+  "sourceUrls": ["https://www.tiktok.com/@nicksadler.io/video/7699263803501841686?lang=en"],
+  "observedOn": "2026-11-14",
+  "taskOutcome": "Evidence-linked intake and partial review completed; tutorial efficacy not_run.",
+  "requirements": ["Identify an attributable official repository before considering reproduction", "Inspect installation behavior and permissions before executing anything"],
+  "claims": ["Creator describes task-based skill discovery and automatic installation; operation and numerical claims are unverified."],
+  "unknowns": ["Primary-source tool identity", "Prerequisites and compatibility", "Costs and licence", "Dependencies, permissions and security", "Unseen content and caption accuracy", "Tutorial efficacy"],
+  "reviewer": "GPT-6.1 Sol evidence reviewer",
+  "reviewPath": "02_Market/Video-Reviews/VR-002-TikTok.md",
+  "evidenceManifest": "06_Build/Video-Pipeline/app/runs/20261114T165810043012Z/video-001/manifest.json",
+  "inspection": {
+    "date": "2026-11-14",
+    "captionTrack": "source.eng-US.transcript.txt",
+    "captionCoverage": "Entire English track, 00:00.020–00:54.359; accuracy unverified",
+    "framesOpened": ["frame-000-0.000s.jpg", "frame-001-30.000s.jpg"],
+    "durationSeconds": 54.366667,
+    "gapSeconds": 30,
+    "unsampledTailSeconds": 24.367,
+    "visualFinding": "Presenter and promotional overlays; no repository, interface or installation result visible in the two inspected stills.",
+    "evidenceLevel": "Captions plus two sparse stills; insufficient for unseen steps, not continuous viewing",
+    "reproduction": "not_run"
+  },
+  "publicationStatus": "unpublished"
+}

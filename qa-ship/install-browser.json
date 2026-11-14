@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-14",
+  "checks": [
+    {
+      "name": "HTTP homepage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Server does not expose vault files",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Demo download serves successfully",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Guide card body has no underline",
+      "passed": true,
+      "details": "none"
+    },
+    {
+      "name": "Install guide fits 390px",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Project paths and activation limits visible",
+      "passed": true,
+      "details": null
+    }
+  ]
+}

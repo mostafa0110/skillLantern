@@ -1,0 +1,59 @@
+{
+  "snapshotOn": "2026-11-14",
+  "items": [
+    {
+      "id": "SL-0004",
+      "source": {
+        "license_observed": "MIT",
+        "revision": "f9a8a041b85185ee4881b3471d3415e939aac772",
+        "content_sha256": "ed40568c9c53fe467734df84decb58215e9cdf468c5eaf44540775b45b841eca",
+        "canonical_url": "https://github.com/LottieFiles/motion-design-skill/tree/f9a8a041b85185ee4881b3471d3415e939aac772/skills/motion-design",
+        "version": "1.0.0",
+        "manifest_path": "06_Build/Pilots/motion-001/source-manifest.json"
+      },
+      "evaluations": [
+        {
+          "case_id": "practice-reservation-v1",
+          "repeat": 1,
+          "condition": "baseline",
+          "environment_id": "motion-001-sol61-win-edge-v1",
+          "input_sha256": "709bfe3db5b292eef7ac24745dcc8a1cc6d5b748edd3249a5511ba02286b7bca",
+          "source_revision": null,
+          "output_path": "06_Build/Pilots/motion-001/runs/baseline-01/index.html",
+          "checks_path": "06_Build/Pilots/motion-001/runs/baseline-01/browser-checks.json",
+          "operator": "GPT-6.1 Sol generation; coordinator browser QA",
+          "run_on": "2026-11-09",
+          "critical_checks_passed": true,
+          "accepted": true,
+          "generation_cost": null,
+          "generation_elapsed_seconds": null,
+          "independent_human_reproduction": false
+        },
+        {
+          "case_id": "practice-reservation-v1",
+          "repeat": 1,
+          "condition": "candidate",
+          "environment_id": "motion-001-sol61-win-edge-v1",
+          "input_sha256": "709bfe3db5b292eef7ac24745dcc8a1cc6d5b748edd3249a5511ba02286b7bca",
+          "source_revision": "f9a8a041b85185ee4881b3471d3415e939aac772",
+          "output_path": "06_Build/Pilots/motion-001/runs/candidate-01/index.html",
+          "checks_path": "06_Build/Pilots/motion-001/runs/candidate-01/browser-checks.json",
+          "operator": "GPT-6.1 Sol generation; coordinator browser QA",
+          "run_on": "2026-11-09",
+          "critical_checks_passed": true,
+          "accepted": true,
+          "generation_cost": null,
+          "generation_elapsed_seconds": null,
+          "independent_human_reproduction": false
+        }
+      ],
+      "recommendation": {
+        "tier": null,
+        "rationale": "One matched pair: both passed 12 critical and one noncritical check. No comparative advantage established; retain unranked pending broader evidence and human review.",
+        "benefit_observed": false
+      },
+      "evidence_level": "task_tested",
+      "last_tested_on": "2026-11-09"
+    }
+  ]
+}

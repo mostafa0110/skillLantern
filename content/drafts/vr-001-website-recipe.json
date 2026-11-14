@@ -1,0 +1,36 @@
+{
+  "state": "draft",
+  "title": "Test a scroll-driven image sequence before building a full animated site",
+  "sourceKind": "workflow",
+  "kind": "workflow",
+  "sourceUrls": [
+    "https://www.youtube.com/watch?v=8QV8izBuSEI"
+  ],
+  "observedOn": "2026-11-14",
+  "sourcePublishedOn": "2026-04-08",
+  "taskOutcome": "Evidence review only: full English captions and 24 sparse still frames inspected. Tutorial not reproduced; proposed local experiment not run.",
+  "requirements": [
+    "Owned or licensed assets",
+    "Local coding and browser inspection",
+    "Provider accounts and credits only if exact external generation is separately authorised"
+  ],
+  "claims": [],
+  "unknowns": [
+    "Provider costs and availability",
+    "Asset/component/skill licences",
+    "Reproduction performance and accessibility",
+    "SEO outcomes"
+  ],
+  "reviewer": "GPT-6.1 Sol evidence reviewer",
+  "reviewPath": "02_Market/Video-Reviews/VR-001-Josh-Website.md",
+  "evidenceManifest": "06_Build/Video-Pipeline/app/runs/20261114T165454213653Z/video-001/manifest.json",
+  "inspection": {
+    "captionTracks": 1,
+    "sampledFramesOpened": 24,
+    "continuousVideoWatched": false,
+    "audioListened": false,
+    "tutorialReproduced": false
+  },
+  "proposedExperiment": "Build an original local workflow-card assembly sequence; compare static poster, video and scroll-indexed frames with mobile and reduced-motion checks.",
+  "publicationStatus": "unpublished"
+}

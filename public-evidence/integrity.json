@@ -1,0 +1,17 @@
+{
+  "snapshotOn": "2026-11-14",
+  "sha256": {
+    "lantern-fallback.svg": "6213d05f8cdd85950de5bb0afed80f0915457e27ae5fb574ffcc8f3cf6fd6b6a",
+    "03_Product/Data-Pilot.json": "b184b3eab95e69c29dede79c81b76128e2eda4515beea218fe11cc3c825bff1f",
+    "06_Build/Pilots/motion-001/comparison-results.json": "f200aa786274366e53822a1aef820d1b03cafc993cc0bd6f283e2f04717cf811",
+    "06_Build/Pilots/motion-001/source-manifest.json": "ea0bfb002bb00842cadb98892f8a4ffc8b885b0dadd10a3b0683c684b72e845e",
+    "06_Build/Pilots/motion-001/input/index.html": "709bfe3db5b292eef7ac24745dcc8a1cc6d5b748edd3249a5511ba02286b7bca",
+    "06_Build/Pilots/motion-001/runs/baseline-01/browser-checks.json": "4bfc6fee5867615b8393ff6a84eaf902fe21da59155db624b18d6a1196298ed5",
+    "06_Build/Pilots/motion-001/runs/baseline-01/index.html": "63c6a4a3f940d493b3166fc43da2d6bad1ede843f80fd8edcad59baa0c50123c",
+    "06_Build/Pilots/motion-001/runs/baseline-01/success.png": "03455f59ad4af4b2dd4ce9c56f69832b548ca0dd0b596e339e98b14e54330eee",
+    "06_Build/Pilots/motion-001/runs/candidate-01/browser-checks.json": "fbf0923fa22a18564a3c1fe9ead80266c932658d35a3c0d21e0118f796ff1506",
+    "06_Build/Pilots/motion-001/runs/candidate-01/index.html": "a1c4fb287406bda34bc71ddd8b2ef88bf05ca3a612a49ce7ccfc913ec3a72c29",
+    "06_Build/Pilots/motion-001/runs/candidate-01/success.png": "eec6180977410932cb8d13800f18f33dc55f4329c1aece0aca3eea09e1b98e7f",
+    "03_Product/Guides/motion-design-demo.zip": "4821441366c744287fe687b46b8740586c3a61189690784b77f40a58e39ce8d3"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-14",
+  "zip_entries": 18,
+  "markdown_files": 17,
+  "license_files": 1,
+  "all_bytes_match_pinned_source_archive": true,
+  "html_files_link_anchor_checks": 15,
+  "english_authored_pages_with_release_canonical": 12,
+  "arabic_release_absent": true,
+  "official_documentation_links": [
+    "https://learn.chatgpt.com/docs/build-skills",
+    "https://code.claude.com/docs/en/skills"
+  ],
+  "native_activation_tested": false
+}

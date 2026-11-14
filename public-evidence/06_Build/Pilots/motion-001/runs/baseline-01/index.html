@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Field Notes — Practice reservation</title>
+<style>
+:root{color-scheme:light;--paper:#f6f3eb;--ink:#243d3a;--accent:#17675a;--line:#c9d3cb;--muted:#526660}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,sans-serif;min-height:100vh;display:grid;place-items:center;padding:24px}
+main{width:min(100%,520px);background:#fffdf7;border:1px solid var(--line);padding:36px;border-radius:16px;box-shadow:0 16px 45px #163b2912}
+.eyebrow{font-size:13px;color:var(--accent);font-weight:650}h1{font:38px/1.12 Georgia,serif;margin:16px 0}p{color:var(--muted)}.facts{border-block:1px solid var(--line);padding:16px 0;margin:22px 0;font-size:14px}
+label{display:block;font-weight:600;margin-top:16px}input[type=text],select{width:100%;padding:12px;margin-top:6px;border:1px solid var(--line);border-radius:7px;background:white;font:inherit;color:var(--ink);transition:border-color 140ms ease,box-shadow 140ms ease}
+input[type=text]:hover,select:hover{border-color:var(--accent)}input[aria-invalid=true]{border-color:#9a3028;box-shadow:0 0 0 1px #9a3028}
+:focus-visible{outline:3px solid #17675a;outline-offset:4px}input[type=checkbox]{accent-color:var(--accent);width:18px;height:18px;flex-shrink:0}
+.simulate{font-size:13px;font-weight:400;display:flex;align-items:center;gap:8px;min-height:32px;cursor:pointer}.submit{width:100%;margin-top:24px;min-height:50px;padding:12px 18px;background:var(--accent);color:white;border:0;border-radius:7px;font:600 15px system-ui;cursor:pointer;transition:background-color 140ms ease,box-shadow 140ms ease,transform 100ms ease;display:flex;align-items:center;justify-content:center;gap:8px}
+@media(hover:hover){.submit:hover:not(:disabled){background:#115246;box-shadow:0 3px 8px #17675a25}}
+.submit:active:not(:disabled){transform:translateY(1px);background:#0c443a;box-shadow:none}.submit:disabled{cursor:wait;background:#456e65}.spinner{display:none;width:16px;height:16px;border:2px solid #ffffff60;border-top-color:white;border-radius:50%;flex-shrink:0}.loading .spinner{display:inline-block;animation:spin 800ms linear infinite}
+#feedback{min-height:90px;padding:14px 12px;margin-top:16px;border:1px solid transparent;border-radius:7px;font-size:14px;color:var(--ink);overflow-wrap:anywhere}[data-state=loading] #feedback{background:#edf2ef;border-color:var(--line)}[data-state=error] #feedback{color:#842b24;background:#fff1ed;border-color:#e7bdb5}[data-state=success] #feedback{color:#125447;background:#eaf4ed;border-color:#a7cdb9;animation:confirm 180ms ease-out}small{display:block;color:var(--muted);font-size:12px;margin-top:18px}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes confirm{from{opacity:.45}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.submit:active:not(:disabled){transform:none}.loading .spinner{border-color:#ffffff80;border-top-color:white}}
+@media(max-width:420px){body{padding:16px}main{padding:24px}h1{font-size:32px}}
+</style>
+</head>
+<body>
+<main>
+<div class="eyebrow">Field Notes · Practice workshop</div>
+<h1>Make room for a useful idea.</h1>
+<p>Choose a practice session and try the reservation interaction.</p>
+<div class="facts">45-minute practice session · Materials included · No payment</div>
+<form id="reservation" data-state="idle" novalidate>
+<label for="name">Your name</label><input type="text" id="name" name="name" autocomplete="off" aria-describedby="feedback" required>
+<label for="session">Session</label><select id="session" name="session"><option>Morning</option><option>Afternoon</option></select>
+<label class="simulate" for="simulate-error"><input type="checkbox" id="simulate-error">Simulate a reservation error</label>
+<button class="submit" id="submit" type="submit"><span class="spinner" aria-hidden="true"></span><span id="button-label">Reserve a practice spot</span></button>
+<div id="feedback" role="status" aria-live="polite" aria-atomic="true"></div>
+</form>
+<small>Synthetic training sample. Nothing is sent or saved.</small>
+</main>
+<script>
+(()=>{
+const form=document.getElementById('reservation'),name=document.getElementById('name'),session=document.getElementById('session'),button=document.getElementById('submit'),label=document.getElementById('button-label'),feedback=document.getElementById('feedback'),simulate=document.getElementById('simulate-error');
+let busy=false;
+name.addEventListener('input',()=>{if(name.hasAttribute('aria-invalid')&&name.value.trim()){name.removeAttribute('aria-invalid');form.dataset.state='idle';feedback.textContent='Name added. Ready to reserve.';label.textContent='Reserve a practice spot';}});
+form.addEventListener('submit',event=>{
+ event.preventDefault();if(busy)return;
+ if(!name.value.trim()){form.dataset.state='error';label.textContent='Reserve a practice spot';feedback.textContent='Enter your name before reserving.';name.setAttribute('aria-invalid','true');name.focus();return;}
+ name.removeAttribute('aria-invalid');busy=true;form.dataset.state='loading';button.disabled=true;button.classList.add('loading');button.setAttribute('aria-busy','true');label.textContent='Reserving…';feedback.textContent='Checking the practice session…';
+ const shouldFail=simulate.checked,selectedSession=session.value;
+ name.disabled=true;session.disabled=true;simulate.disabled=true;
+ setTimeout(()=>{busy=false;button.disabled=false;name.disabled=false;session.disabled=false;simulate.disabled=false;button.classList.remove('loading');button.removeAttribute('aria-busy');
+  if(shouldFail){form.dataset.state='error';label.textContent='Try again';feedback.textContent='Practice reservation failed. Uncheck the simulation and try again.';}
+  else{form.dataset.state='success';label.textContent='Reserve again';feedback.textContent='Practice spot reserved for the '+selectedSession.toLowerCase()+' session.';}
+ },800);
+});
+})();
+</script>
+</body>
+</html>

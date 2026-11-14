@@ -1,0 +1,125 @@
+{
+  "repository": "https://github.com/LottieFiles/motion-design-skill",
+  "revision": "f9a8a041b85185ee4881b3471d3415e939aac772",
+  "upstream_commit_date": "2026-05-18T11:30:13Z",
+  "retrieved_on": "2026-11-09",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80",
+      "git_blob_sha": "cf29711a87aa93532c1253aa71c8c9815938abe2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3589,
+      "sha256": "9d43476646e1d0ae0f082d40877e19ce14dbe0215dd32c3887e8aad731959b03",
+      "git_blob_sha": "aa631cc60eb17a3ff9fd4df6f03ddd466cc49efa"
+    },
+    {
+      "path": "skills/motion-design/SKILL.md",
+      "bytes": 12580,
+      "sha256": "8729ecbc7e5736c1295baaa8ba0384bb4b1aac9cf91b83fcdc64d9548a57bb19",
+      "git_blob_sha": "9b5e2df492752a8343f21a6782a16c97ca5d8f9f"
+    },
+    {
+      "path": "skills/motion-design/director/choreography.md",
+      "bytes": 3035,
+      "sha256": "c81257b56160b9b2f3d99f78d4b8172b425c22d9ca73be06d3ffaa7305a34deb",
+      "git_blob_sha": "8b0322efe715247e4e120c561d2023308d2273a2"
+    },
+    {
+      "path": "skills/motion-design/director/context-adaptation.md",
+      "bytes": 3066,
+      "sha256": "550e96a1c8c369513304ee74c0e89b63168bc7287b83e9ed5685bb65609986b3",
+      "git_blob_sha": "97bc36ee57deb70b2c721caaad41b76191a066dd"
+    },
+    {
+      "path": "skills/motion-design/director/core-philosophy.md",
+      "bytes": 1864,
+      "sha256": "7aaa8a065d9940dad0198cf9cfe74979008495e6daf87f46f9022fff1b6a85e9",
+      "git_blob_sha": "b48ea367dca840ec251b4cc36adbdc6df34c243f"
+    },
+    {
+      "path": "skills/motion-design/director/decision-framework.md",
+      "bytes": 2866,
+      "sha256": "4b6758da6742475c928b4f8be8c662f4b5ed0964468ba7760df8f7635c779358",
+      "git_blob_sha": "040e1ed776993ea0071388425143e39bc7664d0b"
+    },
+    {
+      "path": "skills/motion-design/director/disney-principles.md",
+      "bytes": 3197,
+      "sha256": "39024711890c2684a3434659a4d95a52ca8231facea74e87e79503054aaca671",
+      "git_blob_sha": "4e573031d960aaf69aeea9aa42a2d00a1985afcc"
+    },
+    {
+      "path": "skills/motion-design/director/emotion-mapping.md",
+      "bytes": 2877,
+      "sha256": "a279e55a3f52a9f5830d38dc54679c652d9a5c26f0dd360700c16e23766d468b",
+      "git_blob_sha": "3a923b76b405231074881f5f27415a7ec8978fd6"
+    },
+    {
+      "path": "skills/motion-design/director/motion-personality.md",
+      "bytes": 2998,
+      "sha256": "66a3623b6654869482c02157ca791034a614ca6dcb02a8112049e28d292ee18a",
+      "git_blob_sha": "63e319397123f15169af44e3da904d32fd8a34c9"
+    },
+    {
+      "path": "skills/motion-design/director/narrative-structure.md",
+      "bytes": 2407,
+      "sha256": "d49db19db40425dec027c3012d553b50fd74ed79e27ace9dec1226796469061b",
+      "git_blob_sha": "c989603d1e8749220e66d7273f349bb69db72b82"
+    },
+    {
+      "path": "skills/motion-design/patterns/ambient-continuous.md",
+      "bytes": 2823,
+      "sha256": "f9cfa00d3325dceadcb9ffd77dcb5dcbc51d34121f3b1f162979939006056773",
+      "git_blob_sha": "17d6533571b39a1e8a171b6366623bf8df6c1e1b"
+    },
+    {
+      "path": "skills/motion-design/patterns/entrance-exit.md",
+      "bytes": 2822,
+      "sha256": "70b3fc3a8d58ebe58e293e643b78fd13750d9c8ef1c8fc5fe85e52f7378cbd91",
+      "git_blob_sha": "4f3dc318565fce5ae410da5c95448bc786d1407f"
+    },
+    {
+      "path": "skills/motion-design/patterns/multi-element.md",
+      "bytes": 2362,
+      "sha256": "46c8da91843c593deb763a4a7fa32849bdaeb7a7ecd4d559e3b21bcc976f2c46",
+      "git_blob_sha": "68aab1c0ccfd08a535a59bc01b3d39ad4823dc72"
+    },
+    {
+      "path": "skills/motion-design/patterns/state-feedback.md",
+      "bytes": 3062,
+      "sha256": "dac86388c2d8fcdfc2f194b4f8877caedcdc010df9ce29d27dfc99d08cf8c60e",
+      "git_blob_sha": "8efb7209986ee450a11df829c413a943ff156de7"
+    },
+    {
+      "path": "skills/motion-design/reference/property-selection.md",
+      "bytes": 2922,
+      "sha256": "053d830795fc824fed27618fbd18084207af6aeed55b73c0a6e1d5665de894ae",
+      "git_blob_sha": "21e8594a4eb360093b22aa3ed3146dbb513618ce"
+    },
+    {
+      "path": "skills/motion-design/reference/quality-checklist.md",
+      "bytes": 2080,
+      "sha256": "c11bf193b700d9c9ebc5d871f1d5f193bccc441c4eccc0509b53a40d6e8dc558",
+      "git_blob_sha": "a3d7033f744256e3b6d45468b64a3f19b48ebb6e"
+    },
+    {
+      "path": "skills/motion-design/reference/timing-easing-tables.md",
+      "bytes": 2900,
+      "sha256": "e478f3b99c4cac3f96eca008e20f8808d4cfae165f5799f260092baf9b6ebcff",
+      "git_blob_sha": "810de35c9923d8f43ffc37aeef70faebb7e5bbfc"
+    },
+    {
+      "path": "skills/motion-design/reference/troubleshooting.md",
+      "bytes": 2709,
+      "sha256": "69e5aaeee108231d51187143ae3fce4db7a42936f10682908ca9462a008a047a",
+      "git_blob_sha": "dbae0ebed28c920893393d9210661c1c4e27bf64"
+    }
+  ],
+  "content_sha256": "ed40568c9c53fe467734df84decb58215e9cdf468c5eaf44540775b45b841eca",
+  "hash_method": "SHA256 of sorted UTF-8 lines: file_sha256 + two spaces + relative path + LF",
+  "executed": false
+}

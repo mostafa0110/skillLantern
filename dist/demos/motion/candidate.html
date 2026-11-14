@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Field Notes — Practice reservation</title>
+<style>
+:root{color-scheme:light;--paper:#f6f3eb;--ink:#243d3a;--accent:#17675a;--line:#c9d3cb;--muted:#526660;--ease:cubic-bezier(.2,0,0,1)}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,sans-serif;min-height:100vh;display:grid;place-items:center;padding:24px}
+main{width:min(100%,520px);background:#fffdf7;border:1px solid var(--line);padding:36px;border-radius:16px;box-shadow:0 16px 45px #163b2912}
+.eyebrow{font-size:13px;color:var(--accent);font-weight:650}h1{font:38px/1.12 Georgia,serif;margin:16px 0}p{color:var(--muted)}.facts{border-block:1px solid var(--line);padding:16px 0;margin:22px 0;font-size:14px}
+label{display:block;font-weight:600;margin-top:16px}input[type=text],select{width:100%;min-height:48px;padding:12px;margin-top:6px;border:1px solid var(--line);border-radius:7px;background:white;font:inherit;color:var(--ink);transition:border-color 150ms var(--ease),background-color 150ms var(--ease)}
+input[aria-invalid=true]{border:2px solid #9a3028;padding:11px;background:#fff7f4}input:disabled,select:disabled{opacity:1;color:var(--muted);background:#f1f3ee;cursor:wait}
+:where(input,select,button):focus-visible{outline:3px solid #17675a;outline-offset:4px}
+.simulate{font-size:13px;font-weight:400;display:flex;align-items:center;gap:8px;min-height:44px;cursor:pointer}.simulate input{width:18px;height:18px;accent-color:var(--accent);flex-shrink:0}
+.submit{width:100%;margin-top:18px;min-height:50px;padding:12px 18px;background:var(--accent);color:white;border:0;border-radius:7px;font:600 15px system-ui;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;transition:transform 150ms var(--ease),background-color 90ms var(--ease),box-shadow 150ms var(--ease)}
+@media(hover:hover){.submit:not(:disabled):hover{background:#105346;box-shadow:0 3px 8px #17675a26;transition-duration:90ms}}
+.submit:not(:disabled):active{transform:scale(.985);background:#0c443a;box-shadow:none;transition-duration:70ms}.submit:disabled{cursor:wait;background:#3d6b61}
+.spinner{display:none;width:16px;height:16px;flex:none;border:2px solid #ffffff70;border-top-color:white;border-radius:50%}.loading .spinner{display:inline-block;animation:spin 1s linear infinite}
+#feedback{min-height:88px;margin-top:16px;padding:12px;border:1px solid transparent;border-radius:7px;font-size:14px;overflow-wrap:anywhere}
+[data-state=loading] #feedback{background:#edf3ef;border-color:#c9d3cb}
+[data-state=error] #feedback{color:#82271f;background:#fff1eb;border-color:#d7a79c}
+[data-state=success] #feedback{color:#135348;background:#eaf4ed;border-color:#a6c9b2}
+#feedback.reveal{animation:resolve 220ms var(--ease)}
+small{display:block;color:var(--muted);font-size:12px;margin-top:18px}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes resolve{from{opacity:.5;transform:translateY(3px)}to{opacity:1;transform:none}}
+@media(max-width:420px){body{padding:16px}main{padding:24px}h1{font-size:32px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.submit:not(:disabled):active{transform:none}.loading .spinner{border-color:#ffffff70;border-top-color:white}}
+</style>
+</head>
+<body>
+<main>
+<div class="eyebrow">Field Notes · Practice workshop</div>
+<h1>Make room for a useful idea.</h1>
+<p>Choose a practice session and try the reservation interaction.</p>
+<div class="facts">45-minute practice session · Materials included · No payment</div>
+<form id="reservation" data-state="idle" novalidate>
+<label for="name">Your name</label><input type="text" id="name" name="name" autocomplete="off" required aria-describedby="feedback">
+<label for="session">Session</label><select id="session" name="session"><option>Morning</option><option>Afternoon</option></select>
+<label class="simulate" for="simulate-error"><input type="checkbox" id="simulate-error">Simulate a reservation error</label>
+<button class="submit" id="submit" type="submit"><span class="spinner" aria-hidden="true"></span><span id="button-label">Reserve a practice spot</span></button>
+<div id="feedback" role="status" aria-live="polite" aria-atomic="true"></div>
+</form>
+<small>Synthetic training sample. Nothing is sent or saved.</small>
+</main>
+<script>
+(()=>{
+const form=document.getElementById('reservation'),name=document.getElementById('name'),session=document.getElementById('session'),button=document.getElementById('submit'),label=document.getElementById('button-label'),feedback=document.getElementById('feedback'),simulate=document.getElementById('simulate-error');
+let busy=false;
+function announce(state,message){form.dataset.state=state;feedback.textContent=message;feedback.classList.remove('reveal');void feedback.offsetWidth;feedback.classList.add('reveal');}
+name.addEventListener('input',()=>{if(name.hasAttribute('aria-invalid')&&name.value.trim()){name.removeAttribute('aria-invalid');form.dataset.state='idle';feedback.textContent='Name entered. Ready to reserve.';label.textContent='Reserve a practice spot';}});
+form.addEventListener('submit',event=>{
+ event.preventDefault();if(busy)return;
+ if(!name.value.trim()){announce('error','Enter your name before reserving.');name.setAttribute('aria-invalid','true');label.textContent='Reserve a practice spot';name.focus();return;}
+ name.removeAttribute('aria-invalid');busy=true;button.disabled=true;name.disabled=true;session.disabled=true;simulate.disabled=true;button.classList.add('loading');button.setAttribute('aria-busy','true');label.textContent='Reserving…';announce('loading','Checking the practice session…');
+ const shouldFail=simulate.checked,selectedSession=session.value;
+ setTimeout(()=>{busy=false;button.disabled=false;name.disabled=false;session.disabled=false;simulate.disabled=false;button.classList.remove('loading');button.removeAttribute('aria-busy');
+  if(shouldFail){label.textContent='Try again';announce('error','Practice reservation failed. Uncheck the simulation and try again.');}
+  else{label.textContent='Reserve again';announce('success','Practice spot reserved for the '+selectedSession.toLowerCase()+' session.');}
+ },800);
+});
+})();
+</script>
+</body>
+</html>

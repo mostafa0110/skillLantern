@@ -1,0 +1,206 @@
+{
+  "date": "2026-11-14",
+  "checks": [
+    {
+      "name": "HTTP homepage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Server does not expose vault files",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Demo download serves successfully",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "3D lantern rendered",
+      "passed": true,
+      "details": {
+        "canvas": "block",
+        "fallback": "none",
+        "motion": "Pause animation"
+      }
+    },
+    {
+      "name": "Lantern pause",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Lantern resume",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Reduced motion starts still",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Catalogue matches reviewed entry count",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Catalogue uses broad capability copy",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Spreadsheet search includes XLSX and excludes unrelated animation",
+      "passed": true,
+      "details": [
+        "XLSX"
+      ]
+    },
+    {
+      "name": "Development filter includes matching capabilities only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Evidence filter follows recorded status",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Empty search state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Clear filters restores entries",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Source note dialog",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Dialog Escape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "DeepSeek source note shows untested preview, readiness and cost limits",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Motion guide retains tie and invocation limits",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Copy control passes exact prompt to clipboard interface (stubbed)",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Mobile fit: index.html",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "Mobile fit: skills.html",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "Mobile fit: guides.html",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "Mobile fit: guides/motion-design.html",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "Mobile fit: comparisons.html",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "Mobile fit: how-we-test.html",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "Mobile fit: ar/motion-comparison.html",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "Arabic page language and RTL",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Mobile fit: about.html",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "Mobile menu starts closed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Mobile menu opens",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Mobile menu closes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Direct-file task search includes relevant spreadsheet result and excludes animation",
+      "passed": true,
+      "details": [
+        "XLSX"
+      ]
+    },
+    {
+      "name": "No page JavaScript exceptions",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "limitations": [
+    "Clipboard interface was stubbed to avoid overwriting OS clipboard",
+    "One headless Edge environment; no physical-device or human usability study"
+  ]
+}

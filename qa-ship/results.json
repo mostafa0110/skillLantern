@@ -1,0 +1,1141 @@
+{
+  "date": "2026-11-14",
+  "checks": [
+    {
+      "name": "HTTP homepage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Server does not expose vault files",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Demo download serves successfully",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English-only release: index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Metadata and release canonical: index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> setup.html?outcome=website",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> setup.html?outcome=marketing",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> setup.html?outcome=data",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> setup.html?outcome=motion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> guides/website-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> guides/source-backed-marketing.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: index.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake external source: index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English-only release: skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Metadata and release canonical: skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: skills.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: skills.html -> skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: skills.html -> guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: skills.html -> setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: skills.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: skills.html -> guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: skills.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: skills.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: skills.html -> about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: skills.html -> setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: skills.html -> comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: skills.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake external source: skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English-only release: guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Metadata and release canonical: guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides.html -> skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides.html -> guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides.html -> setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides.html -> guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides.html -> guides/website-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides.html -> guides/source-backed-marketing.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides.html -> setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides.html -> about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides.html -> setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides.html -> comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake external source: guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English-only release: setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Metadata and release canonical: setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup.html -> skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup.html -> guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup.html -> setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup.html -> about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup.html -> setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup.html -> comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake external source: setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English-only release: setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Metadata and release canonical: setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup-help.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup-help.html -> skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup-help.html -> guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup-help.html -> setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup-help.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup-help.html -> setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup-help.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup-help.html -> about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup-help.html -> setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup-help.html -> comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: setup-help.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake external source: setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English-only release: guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Metadata and release canonical: guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/motion-design.html -> ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/motion-design.html -> ../skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/motion-design.html -> ../guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/motion-design.html -> ../setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/motion-design.html -> ../how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/motion-design.html -> ../guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/motion-design.html -> ../downloads/motion-design-demo.zip",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/motion-design.html -> ../demos/motion/candidate.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/motion-design.html -> ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/motion-design.html -> ../evidence/motion-results.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/motion-design.html -> ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/motion-design.html -> ../about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/motion-design.html -> ../setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/motion-design.html -> ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/motion-design.html -> ../how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake external source: guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English-only release: comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Metadata and release canonical: comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: comparisons.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: comparisons.html -> skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: comparisons.html -> guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: comparisons.html -> setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: comparisons.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: comparisons.html -> guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: comparisons.html -> evidence/motion-results.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: comparisons.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: comparisons.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: comparisons.html -> about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: comparisons.html -> setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: comparisons.html -> comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: comparisons.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake external source: comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English-only release: how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Metadata and release canonical: how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: how-we-test.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: how-we-test.html -> skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: how-we-test.html -> guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: how-we-test.html -> setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: how-we-test.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: how-we-test.html -> comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: how-we-test.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: how-we-test.html -> about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: how-we-test.html -> setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: how-we-test.html -> comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: how-we-test.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake external source: how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English-only release: about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Metadata and release canonical: about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: about.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: about.html -> skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: about.html -> guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: about.html -> setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: about.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: about.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: about.html -> setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: about.html -> index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: about.html -> about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: about.html -> setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: about.html -> comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: about.html -> how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake external source: about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English-only release: guides/website-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: guides/website-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Metadata and release canonical: guides/website-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/website-design.html -> ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/website-design.html -> ../skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/website-design.html -> ../guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/website-design.html -> ../setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/website-design.html -> ../how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/website-design.html -> ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/website-design.html -> ../about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/website-design.html -> ../setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/website-design.html -> ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/website-design.html -> ../how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake external source: guides/website-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English-only release: guides/source-backed-marketing.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: guides/source-backed-marketing.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Metadata and release canonical: guides/source-backed-marketing.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/source-backed-marketing.html -> ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/source-backed-marketing.html -> ../skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/source-backed-marketing.html -> ../guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/source-backed-marketing.html -> ../setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/source-backed-marketing.html -> ../how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/source-backed-marketing.html -> ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/source-backed-marketing.html -> ../about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/source-backed-marketing.html -> ../setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/source-backed-marketing.html -> ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local destination: guides/source-backed-marketing.html -> ../how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake external source: guides/source-backed-marketing.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Cinematic renderer is visible",
+      "passed": true,
+      "details": {
+        "words": 47,
+        "text": "MAKE YOUR AGENT USEFUL\n\nYour agent.\nReady for the job.\n\nFind the right capabilities and a clear setup plan for what you want to make.\n\nFind my setup →Explore the guides\nPause animation\n\nAnimated 3D lantern. Move your pointer gently across the object to change its angle.",
+        "canvas": "block",
+        "fallback": "none"
+      }
+    },
+    {
+      "name": "Concise homepage hero",
+      "passed": true,
+      "details": 47
+    },
+    {
+      "name": "3D pause control",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Reduced motion starts still",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Still illustration survives unavailable renderer",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Catalogue count",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Preview source dialog",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Keyboard Escape closes dialog",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Planner step 2",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Planner matches outcome agent vision constraints and escapes HTML",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Planner exposes copy and Markdown controls",
+      "passed": true,
+      "details": [
+        {
+          "id": "download-brief",
+          "text": "Download setup brief"
+        },
+        {
+          "id": "copy-brief",
+          "text": "Copy brief"
+        }
+      ]
+    },
+    {
+      "name": "Planner exact brief copied to stub",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Markdown download produces local Blob",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Markdown Blob contains the exact copied brief",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Planner does not persist user answers",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Planner final result fits mobile with unsafe text",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Implementation help has no fake booking or payment",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Real guide cards link to guides",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Tested guide retains bounded outcome",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: guides/website-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: guides/source-backed-marketing.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Mobile menu opens",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Mobile menu closes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No runtime JavaScript exceptions",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "No unexpected external page requests",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "limitations": [
+    "Clipboard stubbed; Markdown Blob captured without downloading to user folders",
+    "One headless Edge environment; no human usability study",
+    "External source destinations were inspected as URLs, not fetched"
+  ],
+  "visual_review": {
+    "reviewed_on": "2026-11-14",
+    "opened_images": [
+      "home-desktop.png",
+      "home-mobile.png",
+      "planner-final-mobile.png",
+      "guide-mobile.png"
+    ],
+    "observations": "Readable desktop/mobile hierarchy, rendered lantern, aligned guide cards, contained planner results and mobile guide text; no material visual defect observed."
+  },
+  "source_claim_review": {
+    "source_led_guides": 2,
+    "view_counts_checked_on": "2026-11-14",
+    "pool_qualifier": "Both details limit highest-viewed claims to five-result shortlists",
+    "coverage": "English captions reviewed; no frames or reproduction claimed for the two new guides",
+    "english_release_ar_directory_absent": true
+  }
+}

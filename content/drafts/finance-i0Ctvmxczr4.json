@@ -1,0 +1,65 @@
+{
+  "state": "draft",
+  "title": "Four Claude plugins for operational finance",
+  "sourceKind": "workflow",
+  "sourceUrls": [
+    "https://www.youtube.com/watch?v=i0Ctvmxczr4",
+    "https://claude.com/marketplace/plugins/finance",
+    "https://claude.com/marketplace/plugins/data",
+    "https://claude.com/marketplace/plugins/operations",
+    "https://claude.com/marketplace/plugins/legal",
+    "https://support.claude.com/en/articles/13837440-use-plugins-in-claude"
+  ],
+  "observedOn": "2026-11-14",
+  "taskOutcome": "Proposed synthetic variance-analysis and data-quality exercise; not reproduced",
+  "requirements": [
+    "Eligible Claude access; current official plugin help lists paid plans",
+    "Synthetic or authorised source data",
+    "Independent arithmetic and qualified professional review for real finance/legal use"
+  ],
+  "claims": [
+    {
+      "kind": "creator-demonstration",
+      "text": "Shows finance variance/reconciliation, dataset checks/dashboard, vendor comparison and contract-review examples."
+    },
+    {
+      "kind": "official-documentation",
+      "text": "Anthropic marketplace pages describe the four plugin categories and require qualified review for finance/legal outputs."
+    }
+  ],
+  "unknowns": [
+    "No installed plugin revision, security audit or licence review",
+    "No independent reproduction or accuracy/time-savings measurement",
+    "No confirmed account-specific availability, allowance or total cost",
+    "Creator data-security/compliance generalisations not verified"
+  ],
+  "reviewer": "GPT-6.1 Sol source reviewer",
+  "summary": "Nicolas Boucher demonstrates four Anthropic plugins for finance work: Finance for budget variance and reconciliation; Data for messy exports, analysis checks and dashboards; Operations for vendor comparisons; and Legal for contract review. The useful pattern is to start a fresh context for each task, supply relevant inputs, request a structured draft, then check calculations and assumptions against the originals. A sensible future SkillLantern exercise would use synthetic budget-versus-actual data with known totals, followed by a manual reconciliation checklist. Creator speed and accuracy claims are unverified. Contract and reporting outputs need qualified review. This is an operational-finance source, not an investment recommendation or return forecast.",
+  "publicationStatus": "unpublished",
+  "approvalStatus": "not-approved-for-publication",
+  "priority": "secondary-research-queue",
+  "selectionBasis": "User supplied source; not part of highest-viewed shortlist",
+  "sourceCreator": "Nicolas Boucher",
+  "sourcePublishedOn": "2026-11-12",
+  "viewCount": 4819,
+  "viewsCheckedOn": "2026-11-14",
+  "reviewPath": "02_Market/Video-Reviews/finance-i0Ctvmxczr4.md",
+  "evidenceManifest": "02_Market/Video-Reviews/finance-i0Ctvmxczr4-evidence/runs/20261114T173639739340Z/video-001/manifest.json",
+  "inspectionRecord": {
+    "captionTracks": [
+      "source.en-orig.transcript.txt; full deduplicated reading"
+    ],
+    "framesInspected": [
+      "frame-007-180.000s.jpg",
+      "frame-013-360.000s.jpg",
+      "frame-018-531.000s.jpg",
+      "frame-020-570.000s.jpg"
+    ],
+    "framesNotInspected": 20,
+    "continuousViewing": false,
+    "audioListened": false,
+    "reproduced": false
+  },
+  "evidenceLevel": "captions-and-four-sampled-frames-reviewed",
+  "notFinancialAdvice": true
+}
