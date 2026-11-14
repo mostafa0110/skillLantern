@@ -1,60 +1,38 @@
----
-type: implementation
-status: local-website
-created: 2026-11-09
-updated: 2026-11-14
-tags: [website, skilllantern]
----
-
 # SkillLantern website
 
-Open [dist/index.html](dist/index.html) in a browser. The site works directly from disk:
-navigation, search, filters, source notes, prompt copying, demo downloads and the 3D lantern.
-It uses local assets with no package installation, external fonts, accounts or analytics.
+English-first static product, hosted as an owner-private Sites preview. Root coordinates
+publishing; source edits do not change its audience. Navigation includes Discover, Guides, Get set up, Updates and More, with Popular prominently
+linked from Discover. No billing, accounts or recurring refresh is active.
 
-The eight authored pages include home, catalogue, guide index, first tested guide, comparisons,
-methodology, about/privacy and an Arabic comparison. Six of seven capability entries are research
-candidates; Motion Design has one scoped paired task test. No skill has a fabricated tier.
+## Build and data
 
-## Update the catalogue
+Run `python build.py`. This validates evidence and emits the page manifest, static JSON feeds,
+verified skill ZIP and browser-installer payload. Public source snapshots make a website-only
+checkout rebuildable. See the evidence notes below for scope and refresh requirements.
 
-From the vault root, edit **`website/content/catalogue.json`**: this is the only manually
-maintained catalogue. Add a unique slug, source kind (`skill`, `harness`, `plugin`, `workflow`
-or `feature`), plain-text description, task keywords, requirements, dated source review and
-limits. Use HTTPS source URLs. Public availability does not establish free model access,
-production readiness or verified task results. DeepSeek Harness remains an untested developer
-preview, with advertised document/data/slide/research outcomes labelled accordingly.
+`content/popular-registry.json` is the fixed discovery shortlist; `popular-snapshot.json`
+contains dated GitHub metadata. Run the existing `refresh_popular.py` manually when an update
+is needed, review the changed snapshot, then rebuild. The browser refresh is optional and
+contacts public GitHub only after a click, with at most three requests in flight. Counts stay
+in memory. A rate limit restores the published snapshot; no client secrets are used.
 
-Do not author `evidenceStatus`. Tested entries reference the private evidence ledger by
-`evidenceRecordId`; Motion Design uses `SL-0004` in `03_Product/Data-Pilot.json`. The build
-derives its tested status, pinned source and result summary, and refuses unsupported or stale
-passing-result claims. The ledger itself is never copied to the website. Historical evidence
-is not changed by a catalogue edit. `content/skills.json` and `dist/assets/skills-data.js` are
-generated compatibility projections; do not edit them manually.
+Published feeds: `dist/api/top-skills.json` and `dist/api/capabilities.json`. They are static
+snapshots with freshness and scope labels. Owner-private hosting access applies. The proposed
+paid Developer API is documented on developers.html; keys, metering, history and recommendation
+endpoints are planned and not implemented.
 
-For a possible weekly review, copy `content/proposal-template.json` to a descriptively named
-JSON file under `content/drafts/` (create that folder when needed). Record source URLs,
-observed date, task outcome, attributed claims and unknowns. Keep `state` as `draft`.
-Drafts are **not read by the build**, rendered or automatically promoted. A reviewer selects
-and checks a proposal before manually adding it to the catalogue. Do not paste external HTML
-into editorial pages: catalogue strings are escaped; `editorial.json` is trusted, locally
-authored page HTML, not an ingestion endpoint. No recurring schedule is installed.
+## Local file installer
 
-Run `python website/build.py` to validate/project the catalogue and rebuild the preview.
-The script checks required fields, unique IDs, source kinds, HTTPS links and supporting task
-artifacts; it is not a security scanner, output benchmark or external-link availability test.
-Review changed source notes, guide links and counts before using the local preview.
-
-Rebuild the page HTML and selected demo assets with `python website/build.py` from the vault
-root. Content lives in `content/`; shared styles and scripts live in `dist/assets/`. The build
-copies only an explicit list of review artifacts. It never publishes the private vault.
-
-For an optional HTTP preview, run `node website/serve.mjs` and open the printed loopback URL.
-Stop it with Ctrl+C. The server serves only `dist/` and binds to 127.0.0.1. Publishing/domain
-registration remains unperformed. Local preview pages deliberately use noindex metadata and
-a blocking robots.txt; set the real domain and review release configuration before deployment.
-
-[[Website-Review-2026-11-09]] · [[Home]]
+`install.html` requires a top-level secure Chrome/Edge context with the File System Access API.
+The user chooses a project and explicitly starts installation. Only the pinned Markdown package
+and MIT licence are written under `.agents/skills/motion-design`. Payload and written hashes are
+verified. Unmanaged existing folders are refused; same-version owned installs are idempotent.
+A bounded in-memory rollback tracks created files on failure. Undo removes only recorded,
+unmodified known-package files and leaves unrelated files and directories. Handles and user
+inputs are not stored, uploaded or sent to an agent. The browser API does not provide exclusive file creation; nonempty files that appear before
+a write are refused, but users should avoid editing the target folder during installation.
+Native activation and the real external
+folder picker UI remain separate from the isolated OPFS QA evidence.
 
 ## Product release · 14 November 2026
 

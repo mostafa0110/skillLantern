@@ -1,0 +1,30 @@
+[
+  [
+    "updates.html",
+    "Updates",
+    "What changed, and why.",
+    "New guide releases and source-review changes will appear here.",
+    "A release log is planned; no email subscription or automated publishing is active."
+  ],
+  [
+    "collections.html",
+    "Collections",
+    "Useful paths, brought together.",
+    "Curated bundles by goal are coming next.",
+    "For now, explore capabilities by task or create a setup brief."
+  ],
+  [
+    "community.html",
+    "Community",
+    "Learn from real attempts.",
+    "A place for practical workflow experiences is planned.",
+    "Community submissions are not open. No account or posting features are active."
+  ],
+  [
+    "for-creators.html",
+    "For creators",
+    "Make good guidance easier to find.",
+    "Source attribution and clear evidence matter here.",
+    "Creator submissions and listing tools are planned. No submission form is active."
+  ]
+]

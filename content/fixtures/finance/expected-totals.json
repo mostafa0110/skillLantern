@@ -1,0 +1,27 @@
+{
+  "synthetic": true,
+  "currency": "illustrative units",
+  "source": "Original SkillLantern fixture, 2026-11-14",
+  "sample": {
+    "rawRows": 5,
+    "uniqueRows": 4,
+    "duplicateIds": [
+      "E2"
+    ],
+    "budgetRevenue": 10000,
+    "actualRevenue": 11000,
+    "budgetExpense": 6000,
+    "actualExpense": 6500,
+    "budgetProfit": 4000,
+    "actualProfit": 4500,
+    "profitVariance": 500,
+    "profitVariancePercent": 12.5
+  },
+  "reconciliation": {
+    "bankNet": 500,
+    "ledgerNet": 550,
+    "bankMinusLedger": -50,
+    "mismatchedTransaction": "T3"
+  },
+  "warning": "Do not sum the duplicate row or infer volume/price drivers from these inputs."
+}

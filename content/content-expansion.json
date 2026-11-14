@@ -1,0 +1,174 @@
+[
+  {
+    "path": "guides/finance-operations.html",
+    "title": "Check a small finance report with Claude",
+    "description": "Find a duplicate, explain a variance and reconcile two tiny files.",
+    "category": "Finance operations",
+    "outcome": "finance",
+    "coverKey": "finance",
+    "summary": "Find a duplicate, explain a variance and reconcile two tiny files.",
+    "cardSummary": "Find a duplicate, explain a variance and reconcile two tiny files.",
+    "evidenceLevel": "source-led-guide; workflow-not-tested",
+    "requirements": [
+      "eligible paid Claude access",
+      "browser",
+      "synthetic files linked below"
+    ],
+    "steps": [
+      {
+        "icon": "download",
+        "title": "Get the practice files",
+        "action": "Download <a href=\"{{root}}downloads/finance/sample.csv\">sample.csv</a>, <a href=\"{{root}}downloads/finance/bank.csv\">bank.csv</a> and <a href=\"{{root}}downloads/finance/ledger.csv\">ledger.csv</a>. These are fictional amounts.",
+        "expected": "No company data or account connection."
+      },
+      {
+        "icon": "plugin",
+        "title": "Add Finance",
+        "action": "In Claude, open Customize, then Plugins, Discover. Select Anthropic's Finance plugin and click Add.",
+        "expected": "Finance appears among your plugins."
+      },
+      {
+        "icon": "table",
+        "title": "Check the variance",
+        "action": "Attach sample.csv in a fresh chat. Ask: \"Find duplicate IDs first. Deduplicate identical rows. Calculate revenue minus expenses for budget and actual, then explain the profit variance. Do not invent drivers.\"",
+        "expected": "Duplicate E2; profit moves from 4,000 to 4,500."
+      },
+      {
+        "icon": "check",
+        "title": "Reconcile the files",
+        "action": "In a fresh chat, attach bank.csv and ledger.csv. Select reconciliation from the / menu. Ask for unmatched IDs, mismatched amounts and both net totals.",
+        "expected": "T3 differs; bank 500, ledger 550."
+      }
+    ],
+    "verification": [
+      "Compare with <a href=\"{{root}}downloads/finance/expected-totals.json\">expected totals</a>.",
+      "Profit rises 500 (12.5%); bank minus ledger is -50."
+    ],
+    "troubleshooting": [
+      "Missing plugin? Check your plan or organisation policy.",
+      "To undo, remove practice chats/files and the plugin if unwanted."
+    ],
+    "sourceDetailsHtml": "<p>Inspired by <a href=\"https://www.youtube.com/watch?v=i0Ctvmxczr4\">Nicolas Boucher's finance-plugin tutorial</a>: captions and four frames reviewed; workflow untested. <a href=\"https://support.claude.com/en/articles/13837440-use-plugins-in-claude\">Official setup</a>; <a href=\"https://claude.com/marketplace/plugins/finance\">Finance scope</a>. Fixture arithmetic was checked separately. Real reporting needs qualified review. Account cost varies; no financial advice or accuracy guarantee.</p>",
+    "lang": "en",
+    "dir": "ltr",
+    "activeNav": "guides",
+    "observedOn": "2026-11-14",
+    "body": "<header class=\"page-intro\"><p class=\"eyebrow\">Finance operations / Source led</p><h1>Check a small finance report with Claude</h1><p class=\"lede\">Find a duplicate, explain a variance and reconcile two tiny files.</p></header><article class=\"prose\"><p><strong>You need:</strong> eligible paid Claude access; browser; synthetic files linked below.</p><ol class=\"steps\"><li><h2>Get the practice files</h2><p>Download <a href=\"{{root}}downloads/finance/sample.csv\">sample.csv</a>, <a href=\"{{root}}downloads/finance/bank.csv\">bank.csv</a> and <a href=\"{{root}}downloads/finance/ledger.csv\">ledger.csv</a>. These are fictional amounts.</p><p><strong>Look for:</strong> No company data or account connection.</p></li><li><h2>Add Finance</h2><p>In Claude, open Customize, then Plugins, Discover. Select Anthropic's Finance plugin and click Add.</p><p><strong>Look for:</strong> Finance appears among your plugins.</p></li><li><h2>Check the variance</h2><p>Attach sample.csv in a fresh chat. Ask: \"Find duplicate IDs first. Deduplicate identical rows. Calculate revenue minus expenses for budget and actual, then explain the profit variance. Do not invent drivers.\"</p><p><strong>Look for:</strong> Duplicate E2; profit moves from 4,000 to 4,500.</p></li><li><h2>Reconcile the files</h2><p>In a fresh chat, attach bank.csv and ledger.csv. Select reconciliation from the / menu. Ask for unmatched IDs, mismatched amounts and both net totals.</p><p><strong>Look for:</strong> T3 differs; bank 500, ledger 550.</p></li></ol><h2>Check your result</h2><ul><li>Compare with <a href=\"{{root}}downloads/finance/expected-totals.json\">expected totals</a>.</li><li>Profit rises 500 (12.5%); bank minus ledger is -50.</li></ul><p><strong>If stuck:</strong> Missing plugin? Check your plan or organisation policy. To undo, remove practice chats/files and the plugin if unwanted.</p><details><summary>Sources and limits / checked 14 November 2026</summary><p>Inspired by <a href=\"https://www.youtube.com/watch?v=i0Ctvmxczr4\">Nicolas Boucher's finance-plugin tutorial</a>: captions and four frames reviewed; workflow untested. <a href=\"https://support.claude.com/en/articles/13837440-use-plugins-in-claude\">Official setup</a>; <a href=\"https://claude.com/marketplace/plugins/finance\">Finance scope</a>. Fixture arithmetic was checked separately. Real reporting needs qualified review. Account cost varies; no financial advice or accuracy guarantee.</p></details></article>",
+    "downloads": [
+      {
+        "label": "sample.csv",
+        "source": "content/fixtures/finance/sample.csv",
+        "path": "downloads/finance/sample.csv"
+      },
+      {
+        "label": "bank.csv",
+        "source": "content/fixtures/finance/bank.csv",
+        "path": "downloads/finance/bank.csv"
+      },
+      {
+        "label": "ledger.csv",
+        "source": "content/fixtures/finance/ledger.csv",
+        "path": "downloads/finance/ledger.csv"
+      },
+      {
+        "label": "expected-totals.json",
+        "source": "content/fixtures/finance/expected-totals.json",
+        "path": "downloads/finance/expected-totals.json"
+      }
+    ]
+  },
+  {
+    "path": "guides/deepseek-harness.html",
+    "title": "Start small with DeepSeek Harness",
+    "description": "Choose a workspace and understand plugins before adding more tools.",
+    "category": "Agents and harnesses",
+    "outcome": "harness",
+    "coverKey": "harness",
+    "summary": "Choose a workspace and understand plugins before adding more tools.",
+    "cardSummary": "Choose a workspace and understand plugins before adding more tools.",
+    "evidenceLevel": "official-documentation-reviewed; setup-not-tested",
+    "requirements": [
+      "a supported computer",
+      "an existing model credential with known billing",
+      "a disposable environment and practice folder"
+    ],
+    "steps": [
+      {
+        "icon": "desktop",
+        "title": "Choose the official desktop app",
+        "action": "Start at <a href=\"https://www.deepseek.com/en/harness/\">DeepSeek's official page</a> and choose your supported desktop download. Read the linked safety notice before installing.",
+        "expected": "Developer preview, not a production-ready tool."
+      },
+      {
+        "icon": "folder",
+        "title": "Set a narrow workspace",
+        "action": "Use a practice folder containing only a made-up project note. In the UI, choose that workspace. Configure your existing model through Settings, Models; check its billing first.",
+        "expected": "The selected workspace points to the practice folder."
+      },
+      {
+        "icon": "plugin",
+        "title": "Inspect before adding",
+        "action": "Open Plugins. Check built-in capabilities first. Add plugin opens the native package dialog; inspect source, version and permissions before choosing Install, then Enable now. Add nothing you do not need.",
+        "expected": "One understood capability, rather than a large bundle."
+      },
+      {
+        "icon": "file",
+        "title": "Try one bounded task",
+        "action": "Ask: \"Summarise the practice note in five bullets. Do not edit files, run commands or contact services.\" Compare the answer with the note.",
+        "expected": "A faithful summary with no invented facts."
+      }
+    ],
+    "verification": [
+      "Review the actual tool calls and file changes.",
+      "Disable optional plugins you no longer need."
+    ],
+    "troubleshooting": [
+      "If chat is unavailable, check workspace selection and model configuration.",
+      "Stop on unexpected actions; quit the app and preserve the practice folder for inspection."
+    ],
+    "sourceDetailsHtml": "<p>Checked against <a href=\"https://github.com/deepseek-ai/deepseek-harness\">DeepSeek's README</a>, <a href=\"https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/guide/index.md\">UI guide</a> and <a href=\"https://github.com/deepseek-ai/deepseek-harness/blob/master/packages/client/ui-plugin-manager/README.md\">plugin manager</a>. <a href=\"https://github.com/deepseek-ai/deepseek-harness/blob/master/SAFETY.md\">Official warning</a>: unaudited experimental software; permission controls do not guarantee isolation. Setup and task were not executed. Model charges and compatibility are unknown.</p>",
+    "lang": "en",
+    "dir": "ltr",
+    "activeNav": "guides",
+    "observedOn": "2026-11-14",
+    "body": "<header class=\"page-intro\"><p class=\"eyebrow\">Agents and harnesses / Source led</p><h1>Start small with DeepSeek Harness</h1><p class=\"lede\">Choose a workspace and understand plugins before adding more tools.</p></header><article class=\"prose\"><p><strong>You need:</strong> a supported computer; an existing model credential with known billing; a disposable environment and practice folder.</p><ol class=\"steps\"><li><h2>Choose the official desktop app</h2><p>Start at <a href=\"https://www.deepseek.com/en/harness/\">DeepSeek's official page</a> and choose your supported desktop download. Read the linked safety notice before installing.</p><p><strong>Look for:</strong> Developer preview, not a production-ready tool.</p></li><li><h2>Set a narrow workspace</h2><p>Use a practice folder containing only a made-up project note. In the UI, choose that workspace. Configure your existing model through Settings, Models; check its billing first.</p><p><strong>Look for:</strong> The selected workspace points to the practice folder.</p></li><li><h2>Inspect before adding</h2><p>Open Plugins. Check built-in capabilities first. Add plugin opens the native package dialog; inspect source, version and permissions before choosing Install, then Enable now. Add nothing you do not need.</p><p><strong>Look for:</strong> One understood capability, rather than a large bundle.</p></li><li><h2>Try one bounded task</h2><p>Ask: \"Summarise the practice note in five bullets. Do not edit files, run commands or contact services.\" Compare the answer with the note.</p><p><strong>Look for:</strong> A faithful summary with no invented facts.</p></li></ol><h2>Check your result</h2><ul><li>Review the actual tool calls and file changes.</li><li>Disable optional plugins you no longer need.</li></ul><p><strong>If stuck:</strong> If chat is unavailable, check workspace selection and model configuration. Stop on unexpected actions; quit the app and preserve the practice folder for inspection.</p><details><summary>Sources and limits / checked 14 November 2026</summary><p>Checked against <a href=\"https://github.com/deepseek-ai/deepseek-harness\">DeepSeek's README</a>, <a href=\"https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/guide/index.md\">UI guide</a> and <a href=\"https://github.com/deepseek-ai/deepseek-harness/blob/master/packages/client/ui-plugin-manager/README.md\">plugin manager</a>. <a href=\"https://github.com/deepseek-ai/deepseek-harness/blob/master/SAFETY.md\">Official warning</a>: unaudited experimental software; permission controls do not guarantee isolation. Setup and task were not executed. Model charges and compatibility are unknown.</p></details></article>"
+  },
+  {
+    "path": "updates.html",
+    "title": "What to try next",
+    "description": "Dated source checks for useful features, plugins and agent harnesses.",
+    "category": "Updates",
+    "outcome": "updates",
+    "coverKey": "harness",
+    "summary": "Small, useful changes you can understand before trying.",
+    "evidenceLevel": "official-documentation-reviewed",
+    "observedOn": "2026-11-14",
+    "activeNav": "updates",
+    "lang": "en",
+    "dir": "ltr",
+    "updates": [
+      {
+        "title": "Make Claude easier to read",
+        "checkedOn": "2026-11-14",
+        "newness": "Source checked; release date not established",
+        "text": "Open Settings > Appearance (General in older layouts). Choose Light, Dark or Match System; Chat font also offers a Dyslexic Friendly option. Appearance changes presentation, not model capability.",
+        "url": "https://support.claude.com/en/articles/8887527-customizing-your-appearance-settings"
+      },
+      {
+        "title": "Plugins bring role-specific workflows together",
+        "checkedOn": "2026-11-14",
+        "newness": "Source checked; not claimed new this week",
+        "text": "Claude groups plugins, skills and connectors under Customize. Paid-plan access and organisation policies apply. Try a small synthetic finance exercise before using business data.",
+        "url": "https://support.claude.com/en/articles/13837440-use-plugins-in-claude"
+      },
+      {
+        "title": "Explore a harness beyond skill files",
+        "checkedOn": "2026-11-14",
+        "newness": "Developer preview; release date not asserted",
+        "text": "DeepSeek Harness exposes a native plugin manager for optional capabilities. Its official safety notice says it is unaudited and not production-ready. Start with an isolated practice workspace.",
+        "url": "https://www.deepseek.com/en/harness/"
+      }
+    ],
+    "body": "<header class=\"page-intro\"><p class=\"eyebrow\">Updates / 14 November 2026</p><h1>What to try next.</h1><p class=\"lede\">Useful features, explained before you add them.</p></header><article class=\"prose\"><section><p class=\"eyebrow\">Source checked 2026-11-14</p><h2>Make Claude easier to read</h2><p>Open Settings > Appearance (General in older layouts). Choose Light, Dark or Match System; Chat font also offers a Dyslexic Friendly option. Appearance changes presentation, not model capability.</p><p><a href=\"https://support.claude.com/en/articles/8887527-customizing-your-appearance-settings\">Read the official source</a></p><small>Source checked; release date not established</small></section><section><p class=\"eyebrow\">Source checked 2026-11-14</p><h2>Plugins bring role-specific workflows together</h2><p>Claude groups plugins, skills and connectors under Customize. Paid-plan access and organisation policies apply. Try a small synthetic finance exercise before using business data.</p><p><a href=\"https://support.claude.com/en/articles/13837440-use-plugins-in-claude\">Read the official source</a></p><small>Source checked; not claimed new this week</small></section><section><p class=\"eyebrow\">Source checked 2026-11-14</p><h2>Explore a harness beyond skill files</h2><p>DeepSeek Harness exposes a native plugin manager for optional capabilities. Its official safety notice says it is unaudited and not production-ready. Start with an isolated practice workspace.</p><p><a href=\"https://www.deepseek.com/en/harness/\">Read the official source</a></p><small>Developer preview; release date not asserted</small></section><p><a href=\"{{root}}guides/finance-operations.html\">Try the finance exercise</a> or <a href=\"{{root}}guides/deepseek-harness.html\">explore DeepSeek Harness</a>.</p><details><summary>How these updates are labelled</summary><p>These are dated checks of official sources, not a claim that every feature launched this week. No product installation or performance comparison was run.</p></details></article>"
+  }
+]

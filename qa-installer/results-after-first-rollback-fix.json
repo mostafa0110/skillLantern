@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-14",
+  "method": "Headless Edge isolated OPFS; directory picker stub; native external picker and agent activation not tested",
+  "checks": [
+    {
+      "name": "Success is files-installed, activation pending",
+      "passed": true,
+      "detail": "18 files installed and hash-verified. Open this project in Codex and check /skills or $motion-design. Agent activation has not been verified."
+    },
+    {
+      "name": "18 payload files plus owner record",
+      "passed": true
+    },
+    {
+      "name": "Every installed file matches SHA256",
+      "passed": true
+    },
+    {
+      "name": "Same version is idempotent",
+      "passed": true
+    },
+    {
+      "name": "Fresh undo removes only owned files",
+      "passed": true
+    },
+    {
+      "name": "Undo preserves project ancestors",
+      "passed": true
+    },
+    {
+      "name": "Unmanaged target refused without writes",
+      "passed": true
+    },
+    {
+      "name": "Modified and unowned files preserved by undo",
+      "passed": true
+    },
+    {
+      "name": "Tampered ownership record refused",
+      "passed": true
+    },
+    {
+      "name": "Cancelled picker cannot install",
+      "passed": true
+    },
+    {
+      "name": "Unavailable picker gives fallback",
+      "passed": true
+    },
+    {
+      "name": "Traversal manifest refused before picker",
+      "passed": true
+    },
+    {
+      "name": "Payload hash mismatch refused before picker",
+      "passed": true
+    },
+    {
+      "name": "Network failure blocks selection",
+      "passed": true
+    },
+    {
+      "name": "Partial write failure 1 preserves sentinel without unowned residue",
+      "passed": true,
+      "detail": {
+        "installStatus": "Installation stopped. All files created by this attempt were rolled back; empty directories may remain. fixture write failure",
+        "undoStatus": "No valid ownership record. Nothing removed.",
+        "residue": [
+          "sentinel.txt"
+        ]
+      }
+    },
+    {
+      "name": "Partial write failure 2 preserves sentinel without unowned residue",
+      "passed": true,
+      "detail": {
+        "installStatus": "Installation stopped. All files created by this attempt were rolled back; empty directories may remain. fixture write failure",
+        "undoStatus": "No valid ownership record. Nothing removed.",
+        "residue": [
+          "sentinel.txt"
+        ]
+      }
+    },
+    {
+      "name": "Partial write failure 7 preserves sentinel without unowned residue",
+      "passed": true,
+      "detail": {
+        "installStatus": "Installation stopped. All files created by this attempt were rolled back; empty directories may remain. fixture write failure",
+        "undoStatus": "No valid ownership record. Nothing removed.",
+        "residue": [
+          "sentinel.txt"
+        ]
+      }
+    },
+    {
+      "name": "Partial write failure 19 preserves sentinel without unowned residue",
+      "passed": true,
+      "detail": {
+        "installStatus": "Installation stopped. All files created by this attempt were rolled back; empty directories may remain. fixture write failure",
+        "undoStatus": "No valid ownership record. Nothing removed.",
+        "residue": [
+          "sentinel.txt"
+        ]
+      }
+    },
+    {
+      "name": "Failure rollback preserves externally edited and unowned files",
+      "passed": true,
+      "detail": {
+        "status": "Installation stopped. Rollback kept 1 changed or inaccessible files; inspect the skill folder manually. fixture concurrent edit and write failure",
+        "files": [
+          ".agents/skills/motion-design/LICENSE",
+          ".agents/skills/motion-design/unowned.txt"
+        ]
+      }
+    },
+    {
+      "name": "No stored handles or outbound folder-data code",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

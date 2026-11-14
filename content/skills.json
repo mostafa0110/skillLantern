@@ -230,5 +230,69 @@
     ],
     "licenseNote": "Verify the current repository licence and dependency/model terms before reuse.",
     "evidenceStatus": "research-candidate"
+  },
+  {
+    "id": "ponytail",
+    "name": "Ponytail",
+    "publisher": "DietrichGebert",
+    "sourceKind": "toolkit",
+    "category": "Development",
+    "summary": "Coding guidance for smaller complete changes, with review and audit skills.",
+    "sourceUrl": "https://github.com/DietrichGebert/ponytail",
+    "requirements": [
+      "Compatible coding-agent host; setup differs by host.",
+      "Claude Code / Codex plugin adapters run Node.js lifecycle hooks; node must be available on the noninteractive PATH. Review hooks before trusting them.",
+      "Manual SKILL.md context differs from installing the full plugin; follow upstream INSTALL.md."
+    ],
+    "limitations": [
+      "Official source and installation guide inspected; not installed, executed or behavior-tested here.",
+      "Author benchmark percentages were not independently reproduced.",
+      "A multi-skill toolkit, not a single universally installable skill."
+    ],
+    "licenseNote": "MIT per GitHub repository licence metadata checked 2026-11-14; review bundled files and dependencies.",
+    "evidenceSummary": "Official README and INSTALL.md inspected on 2026-11-14. No installation or comparative evaluation performed.",
+    "taskKeywords": [
+      "Ponytail",
+      "coding",
+      "review",
+      "audit",
+      "small changes",
+      "toolkit"
+    ],
+    "reviewedOn": "2026-11-14",
+    "guidePath": null,
+    "evidenceStatus": "research-candidate"
+  },
+  {
+    "id": "ui-ux-pro-max",
+    "name": "UI UX Pro Max",
+    "publisher": "nextlevelbuilder",
+    "sourceKind": "toolkit",
+    "category": "Design & motion",
+    "summary": "Design guidance and design-system generation for interfaces across platforms and frameworks.",
+    "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "requirements": [
+      "Compatible coding-agent host and host-specific upstream setup.",
+      "Additional runtime requirements were not verified; follow the current official README."
+    ],
+    "limitations": [
+      "README and repository metadata inspected; no installation, execution or host compatibility evaluation.",
+      "No usability or accessibility evaluation; stars do not validate generated design quality.",
+      "A UI/UX toolkit; no universal bundle installation is offered here."
+    ],
+    "licenseNote": "MIT per official repository and GitHub metadata checked 2026-11-14; inspect bundled resources before reuse.",
+    "evidenceSummary": "Official README and canonical repository metadata inspected on 2026-11-14. No product performance tests performed.",
+    "taskKeywords": [
+      "UI UX Pro Max",
+      "design system",
+      "UI",
+      "UX",
+      "website",
+      "interface",
+      "toolkit"
+    ],
+    "reviewedOn": "2026-11-14",
+    "guidePath": null,
+    "evidenceStatus": "research-candidate"
   }
 ]

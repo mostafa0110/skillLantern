@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-14",
+  "checks": [
+    {
+      "name": "HTTP homepage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Server does not expose vault files",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Demo download serves successfully",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Popular title and slug separated",
+      "passed": true,
+      "details": {
+        "title": "block",
+        "slug": "block",
+        "margin": "6px",
+        "titleBottom": 931.28125,
+        "slugTop": 937.28125
+      }
+    },
+    {
+      "name": "Static file plan discloses payload plus ownership record",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Secondary labels render no question-mark arrows",
+      "passed": true,
+      "details": null
+    }
+  ]
+}

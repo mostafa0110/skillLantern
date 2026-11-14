@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-14",
+  "checks": [
+    {
+      "name": "HTTP homepage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Server does not expose vault files",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Demo download serves successfully",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Offscreen renderer stops drawing",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Renderer draw instrumentation observed active frames",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Still fallback survives unavailable renderer",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Top-level loopback secure context offers selection without writing",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Iframe installer blocked with manual fallback",
+      "passed": true,
+      "details": {
+        "disabled": true,
+        "text": "Use a top-level Chrome or Edge HTTPS tab for folder installation. The ZIP and manual guide work in other browsers."
+      }
+    },
+    {
+      "name": "Direct-file unavailable message gives fallback",
+      "passed": true,
+      "details": {
+        "disabled": true,
+        "text": "Package unavailable in this context. Use a top-level HTTPS Chrome or Edge tab, or the ZIP/manual guide below. Failed to fetch"
+      }
+    }
+  ],
+  "limitations": [
+    "No folder picker or native permissions exercised"
+  ]
+}

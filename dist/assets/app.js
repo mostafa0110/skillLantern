@@ -13,17 +13,22 @@
   const params=new URLSearchParams(location.search);
   if(search&&evidence){
     const cards=[...document.querySelectorAll('[data-card]')],chips=[...document.querySelectorAll('[data-filter-category]')];
+    let type='all';
+    const typeButtons=[...document.querySelectorAll('[data-filter-type]')];
     let category=chips.some(b=>b.dataset.filterCategory===params.get('category'))?params.get('category'):'all';
     search.value=params.get('q')||'';
     const apply=()=>{
       const words=search.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
       let count=0;
-      for(const card of cards){const match=(category==='all'||card.dataset.category===category)&&(evidence.value==='all'||card.dataset.evidence===evidence.value)&&words.every(w=>card.dataset.search.toLocaleLowerCase().includes(w));card.hidden=!match;if(match)count++}
+      for(const card of cards){const match=(type==='all'||card.dataset.type===type)&&(category==='all'||card.dataset.category===category)&&(evidence.value==='all'||card.dataset.evidence===evidence.value)&&words.every(w=>card.dataset.search.toLocaleLowerCase().includes(w));card.hidden=!match;if(match)count++}
+      for(const b of typeButtons)b.setAttribute('aria-pressed',String(b.dataset.filterType===type));
       for(const button of chips)button.setAttribute('aria-pressed',String(button.dataset.filterCategory===category));
       document.getElementById('result-count').textContent=count+' '+(count===1?'capability':'capabilities');
-      document.getElementById('empty-state').hidden=count!==0;
+      const empty=document.getElementById('empty-state');empty.hidden=count!==0;
+      if(!count){empty.querySelector('h2').textContent=type==='plugin'?'Plugin reviews are coming next.':type==='workflow'?'More workflow reviews are on the way.':'No matching capabilities yet.';empty.querySelector('p').textContent=(type==='plugin'||type==='workflow')?'We only list sourced entries. Explore the existing guides while this collection grows.':'Try a broader task or clear the filters.'}
     };
-    const clear=()=>{category='all';search.value='';evidence.value='all';apply();search.focus()};
+    const clear=()=>{category='all';type='all';search.value='';evidence.value='all';apply();search.focus()};
+    typeButtons.forEach(b=>b.addEventListener('click',()=>{type=b.dataset.filterType;apply()}));
     chips.forEach(b=>b.addEventListener('click',()=>{category=b.dataset.filterCategory;apply()}));
     document.getElementById('clear-filters').addEventListener('click',clear);
     document.querySelectorAll('[data-clear-filters]').forEach(b=>b.addEventListener('click',clear));
@@ -84,4 +89,14 @@
     result.querySelector('#copy-brief').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(brief);result.querySelector('#brief-status').textContent='Brief copied.'}catch{result.querySelector('details').open=true;const range=document.createRange();range.selectNodeContents(result.querySelector('#brief-preview'));const selection=getSelection();selection.removeAllRanges();selection.addRange(range);result.querySelector('#brief-status').textContent='Select and copy the complete brief below.'}});
     result.hidden=false;result.focus();result.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
   });
+})();
+
+(() => {
+const table=document.getElementById('popular-rows');if(!table)return;
+const original=window.SKILLLANTERN_POPULAR,search=document.getElementById('popular-search'),sort=document.getElementById('popular-sort'),button=document.getElementById('popular-refresh'),status=document.getElementById('popular-status');let rows=original.items.map(v=>({...v}));
+const text=(tag,value)=>{const el=document.createElement(tag);el.textContent=value;return el};
+const render=()=>{const q=search.value.trim().toLowerCase(),filtered=rows.filter(v=>[v.name,v.repository,v.kind,v.description].join(' ').toLowerCase().includes(q)).sort((a,b)=>sort.value==='name'?a.name.localeCompare(b.name):(b.stars??-1)-(a.stars??-1));table.replaceChildren();for(const v of filtered){const tr=document.createElement('tr'),td=document.createElement('td'),a=text('a',v.name);a.href='https://github.com/'+v.repository;a.target='_blank';a.rel='noopener noreferrer';td.append(a,text('small',v.repository),text('p',v.description||''));tr.append(td,text('td',v.stars==null?'Unavailable':Number(v.stars).toLocaleString()),text('td',v.kind),text('td',(v.starsCheckedAt||'Unknown')+' · '+v.fetchStatus));table.append(tr)}document.getElementById('popular-empty').hidden=filtered.length!==0};
+search.addEventListener('input',render);sort.addEventListener('change',render);
+button.addEventListener('click',async()=>{button.disabled=true;status.textContent='Requesting public counts from GitHub…';let index=0,limited=false,failed=0;const updates=new Map();const worker=async()=>{while(index<rows.length&&!limited){const v=rows[index++];try{const response=await fetch('https://api.github.com/repos/'+v.repository,{headers:{Accept:'application/vnd.github+json'},credentials:'omit'});if(response.status===429||response.status===403){limited=true;break}if(!response.ok)throw Error('Unavailable');const data=await response.json();if(!Number.isInteger(data.stargazers_count))throw Error('Invalid count');updates.set(v.id,{stars:data.stargazers_count,starsCheckedAt:new Date().toISOString(),fetchStatus:'reader-refreshed'})}catch{failed++}}};try{await Promise.all([worker(),worker(),worker()]);if(limited){rows=original.items.map(v=>({...v}));status.textContent='GitHub rate limit reached. Showing the dated published snapshot; no further requests will be started.'}else{rows=rows.map(v=>({...v,...(updates.get(v.id)||{}),fetchStatus:updates.has(v.id)?'reader-refreshed':v.fetchStatus}));status.textContent=`Refreshed ${updates.size} repositories in memory. ${failed?failed+' unavailable; their dated snapshot counts remain.':'Published JSON feeds are unchanged.'}`}render()}finally{button.disabled=false}});
+render();
 })();

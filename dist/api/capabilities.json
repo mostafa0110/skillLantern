@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-14",
+  "mode": "published snapshot",
+  "scope": "Reviewed catalogue; source review is not installation or security certification.",
+  "items": [
+    {
+      "id": "motion-design",
+      "name": "Motion Design",
+      "publisher": "LottieFiles",
+      "category": "Design & motion",
+      "summary": "Plan timing, easing and feedback for interface animations.",
+      "requirements": [
+        "Coding agent that reads local Markdown",
+        "Local HTML editing and a browser for this guide"
+      ],
+      "reviewedOn": "2026-11-09",
+      "guidePath": "guides/motion-design.html",
+      "limitations": [
+        "Tested through explicit local context, not native installation or automatic triggering",
+        "Headless Edge on Windows; no independent human reproduction",
+        "Scoped AI source review only; SkillSpector installation failed and no scan ran",
+        "Human editorial review pending; no usability superiority established"
+      ],
+      "licenseNote": "MIT at the tested commit; retain its notice. Agent access and other implementation dependencies have separate terms.",
+      "sourceKind": "skill",
+      "evidenceStatus": "task-tested",
+      "sourceUrl": "https://github.com/LottieFiles/motion-design-skill/tree/f9a8a041b85185ee4881b3471d3415e939aac772/skills/motion-design",
+      "evidenceSummary": "One matched pair: both passed 12 critical and one noncritical check. No comparative advantage established; retain unranked pending broader evidence and human review."
+    },
+    {
+      "id": "emil-animate",
+      "name": "Animate",
+      "publisher": "Emil Kowalski",
+      "category": "Design & motion",
+      "summary": "Choose purposeful interface motion with guidance on curves, duration and accessibility.",
+      "sourceUrl": "https://github.com/emilkowalski/skills/blob/main/skills/animate/SKILL.md",
+      "requirements": [
+        "Coding agent with the selected skill context",
+        "A target interface and its existing development tools"
+      ],
+      "evidenceSummary": "Primary documentation inspected; installation and task performance have not been tested here.",
+      "reviewedOn": "2026-11-09",
+      "guidePath": null,
+      "limitations": [
+        "Exact revision and package hash not pinned",
+        "Host compatibility and security review pending",
+        "No measured benefit or tested ranking"
+      ],
+      "licenseNote": "MIT observed for the upstream collection; review the exact module revision and implementation dependencies before reuse.",
+      "sourceKind": "skill",
+      "evidenceStatus": "research-candidate"
+    },
+    {
+      "id": "doc-coauthoring",
+      "name": "Doc Coauthoring",
+      "publisher": "Anthropic",
+      "category": "Writing & documents",
+      "summary": "Structure a proposal or document through context gathering, drafting and reader checks.",
+      "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/doc-coauthoring/SKILL.md",
+      "requirements": [
+        "Agent able to follow the documented writing workflow",
+        "Source context and a clear document purpose"
+      ],
+      "evidenceSummary": "Official source instructions inspected; setup and document outcomes have not been tested here.",
+      "reviewedOn": "2026-11-09",
+      "guidePath": null,
+      "limitations": [
+        "Exact revision and module licence review pending",
+        "Simulated reader feedback is not independent human validation",
+        "External document connectors require separate access review"
+      ],
+      "licenseNote": "Module-specific licence terms were not established in this shortlist; verify before redistribution.",
+      "sourceKind": "skill",
+      "evidenceStatus": "research-candidate"
+    },
+    {
+      "id": "xlsx",
+      "name": "XLSX",
+      "publisher": "Anthropic",
+      "category": "Data & spreadsheets",
+      "summary": "Create or clean spreadsheets with guidance for formulas, formatting and output checks.",
+      "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md",
+      "requirements": [
+        "Python spreadsheet tools appropriate to the task",
+        "Review of bundled scripts and recalculation requirements"
+      ],
+      "evidenceSummary": "Official documentation inspected; no spreadsheet run or verified output recorded here.",
+      "reviewedOn": "2026-11-09",
+      "guidePath": null,
+      "limitations": [
+        "Source assumes some tools are preinstalled; local availability is unverified",
+        "Exact revision and dependencies need review",
+        "Formula correctness and file preservation require actual checks"
+      ],
+      "licenseNote": "The module points to LICENSE.txt for complete terms; those terms have not been established by this shortlist.",
+      "sourceKind": "skill",
+      "evidenceStatus": "research-candidate"
+    },
+    {
+      "id": "webapp-testing",
+      "name": "Webapp Testing",
+      "publisher": "Anthropic",
+      "category": "Development",
+      "summary": "Check a local web application using browser interactions, screenshots and logs.",
+      "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/webapp-testing/SKILL.md",
+      "requirements": [
+        "Python Playwright and a supported browser",
+        "Local application access and reviewed server helpers"
+      ],
+      "evidenceSummary": "Official package instructions inspected; this candidate has not been installed or task-tested here.",
+      "reviewedOn": "2026-11-09",
+      "guidePath": null,
+      "limitations": [
+        "Helper scripts must be inspected before execution",
+        "Browser, server and host compatibility remain untested",
+        "Our separate browser checks do not validate this skill package"
+      ],
+      "licenseNote": "The module points to LICENSE.txt for complete terms; verify that file and dependency licences before reuse.",
+      "sourceKind": "skill",
+      "evidenceStatus": "research-candidate"
+    },
+    {
+      "id": "react-best-practices",
+      "name": "React Best Practices",
+      "publisher": "Vercel",
+      "category": "Development",
+      "summary": "Review React and Next.js code for performance patterns and common bottlenecks.",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-best-practices/SKILL.md",
+      "requirements": [
+        "A React or Next.js codebase",
+        "Agent access to the selected rules and relevant source"
+      ],
+      "evidenceSummary": "Vercel's skill documentation inspected; no installation, refactor or performance benchmark performed here.",
+      "reviewedOn": "2026-11-09",
+      "guidePath": null,
+      "limitations": [
+        "Rules need a matching framework and version",
+        "Exact revision and security review pending",
+        "Performance improvement requires measurement on the actual application"
+      ],
+      "licenseNote": "The inspected SKILL.md declares MIT; verify the pinned package and any implementation dependencies before redistribution.",
+      "sourceKind": "skill",
+      "evidenceStatus": "research-candidate"
+    },
+    {
+      "id": "deepseek-harness",
+      "name": "DeepSeek Harness",
+      "publisher": "DeepSeek",
+      "category": "Development",
+      "sourceKind": "harness",
+      "summary": "Explore a developer-preview agent harness advertised for documents, data, slides and research.",
+      "sourceUrl": "https://github.com/deepseek-ai/deepseek-harness",
+      "requirements": [
+        "Review developer-preview setup and safety documentation",
+        "Compatible model/API access and any required accounts; costs not assumed included"
+      ],
+      "evidenceSummary": "Official preview source identified; installation and advertised task outcomes have not been tested here.",
+      "reviewedOn": "2026-11-14",
+      "guidePath": null,
+      "limitations": [
+        "Developer preview and prerelease; not production-ready or security-certified",
+        "Documents, data, slides and research are advertised capabilities, not our verified results",
+        "Credentials, permissions, execution environment and model charges require review"
+      ],
+      "licenseNote": "Verify the current repository licence and dependency/model terms before reuse.",
+      "evidenceStatus": "research-candidate"
+    },
+    {
+      "id": "ponytail",
+      "name": "Ponytail",
+      "publisher": "DietrichGebert",
+      "sourceKind": "toolkit",
+      "category": "Development",
+      "summary": "Coding guidance for smaller complete changes, with review and audit skills.",
+      "sourceUrl": "https://github.com/DietrichGebert/ponytail",
+      "requirements": [
+        "Compatible coding-agent host; setup differs by host.",
+        "Claude Code / Codex plugin adapters run Node.js lifecycle hooks; node must be available on the noninteractive PATH. Review hooks before trusting them.",
+        "Manual SKILL.md context differs from installing the full plugin; follow upstream INSTALL.md."
+      ],
+      "limitations": [
+        "Official source and installation guide inspected; not installed, executed or behavior-tested here.",
+        "Author benchmark percentages were not independently reproduced.",
+        "A multi-skill toolkit, not a single universally installable skill."
+      ],
+      "licenseNote": "MIT per GitHub repository licence metadata checked 2026-11-14; review bundled files and dependencies.",
+      "evidenceSummary": "Official README and INSTALL.md inspected on 2026-11-14. No installation or comparative evaluation performed.",
+      "reviewedOn": "2026-11-14",
+      "guidePath": null,
+      "evidenceStatus": "research-candidate"
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "name": "UI UX Pro Max",
+      "publisher": "nextlevelbuilder",
+      "sourceKind": "toolkit",
+      "category": "Design & motion",
+      "summary": "Design guidance and design-system generation for interfaces across platforms and frameworks.",
+      "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "requirements": [
+        "Compatible coding-agent host and host-specific upstream setup.",
+        "Additional runtime requirements were not verified; follow the current official README."
+      ],
+      "limitations": [
+        "README and repository metadata inspected; no installation, execution or host compatibility evaluation.",
+        "No usability or accessibility evaluation; stars do not validate generated design quality.",
+        "A UI/UX toolkit; no universal bundle installation is offered here."
+      ],
+      "licenseNote": "MIT per official repository and GitHub metadata checked 2026-11-14; inspect bundled resources before reuse.",
+      "evidenceSummary": "Official README and canonical repository metadata inspected on 2026-11-14. No product performance tests performed.",
+      "reviewedOn": "2026-11-14",
+      "guidePath": null,
+      "evidenceStatus": "research-candidate"
+    }
+  ]
+}

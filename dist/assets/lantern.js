@@ -2,9 +2,10 @@
 'use strict';
 (() => {
 const canvas=document.getElementById('scene'), fallback=document.getElementById('fallback');
-const button=document.getElementById('motion'), status=document.getElementById('status'), stage=document.getElementById('stage');
-if(!canvas||!fallback||!button||!status||!stage)return;
+const button=document.getElementById('motion'), preference=document.getElementById('reduce-motion'), status=document.getElementById('status'), stage=document.getElementById('stage');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+if(preference)preference.checked=reduced.matches;
+if(!canvas||!fallback||!stage){if(preference)reduced.addEventListener('change',()=>{preference.checked=reduced.matches;});return;}
 let gl,program,buffer,locations,raf=0,last=0,elapsed=0,running=!reduced.matches,lost=false,inView=true;
 let pointerX=0,pointerY=0,turnX=0,turnY=0;
 const vertices=[];
@@ -70,7 +71,7 @@ function initialize(){
  gl.useProgram(program);buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(vertices),gl.STATIC_DRAW);
  for(const [name,size,offset] of [['aPosition',3,0],['aNormal',3,12],['aColor',3,24],['aEmission',1,36]]){const at=gl.getAttribLocation(program,name);gl.enableVertexAttribArray(at);gl.vertexAttribPointer(at,size,gl.FLOAT,false,40,offset);}
  locations={model:gl.getUniformLocation(program,'uModel'),projection:gl.getUniformLocation(program,'uProjection'),core:gl.getUniformLocation(program,'uCore')};
- gl.enable(gl.DEPTH_TEST);gl.disable(gl.CULL_FACE);gl.clearColor(0,0,0,0);canvas.hidden=false;fallback.setAttribute('hidden','');button.disabled=false;lost=false;
+ gl.enable(gl.DEPTH_TEST);gl.disable(gl.CULL_FACE);gl.clearColor(0,0,0,0);canvas.hidden=false;fallback.setAttribute('hidden','');if(button)button.disabled=false;lost=false;
  resize();updateStatus();schedule();
 }
 function resize(){if(!gl||lost)return;const r=stage.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,1.75);canvas.width=Math.max(1,Math.round(r.width*dpr));canvas.height=Math.max(1,Math.round(r.height*dpr));gl.viewport(0,0,canvas.width,canvas.height);render();}
@@ -86,15 +87,17 @@ function render(){
 function cancel(){if(raf)cancelAnimationFrame(raf);raf=0;last=0;}
 function schedule(){if(!raf&&running&&!lost&&!document.hidden&&inView)raf=requestAnimationFrame(frame);}
 function frame(now){raf=0;if(!running||lost||document.hidden||!inView)return;const dt=last?Math.min((now-last)/1000,.05):0;last=now;elapsed+=dt;turnX+=(pointerX-turnX)*.045;turnY+=(pointerY-turnY)*.045;render();schedule();}
-function updateStatus(){button.textContent=running?'Pause animation':'Resume animation';status.textContent=running?'Animated 3D lantern. Move your pointer gently across the object to change its angle.':'3D lantern paused. Resume is optional'+(reduced.matches?' — reduced motion is enabled.':'.');}
-button.addEventListener('click',()=>{running=!running;cancel();updateStatus();if(running)schedule();else render();});
+function updateStatus(){if(button)button.textContent=running?'Pause animation':'Resume animation';if(preference)preference.checked=!running;if(status)status.textContent=running?'Lantern animation enabled.':'Lantern animation reduced.';}
+function setRunning(value){running=value;cancel();pointerX=pointerY=0;updateStatus();if(running)schedule();else render();}
+if(button)button.addEventListener('click',()=>setRunning(!running));
+if(preference)preference.addEventListener('change',()=>setRunning(!preference.checked));
 stage.addEventListener('pointermove',e=>{if(!running||e.pointerType==='touch')return;const r=stage.getBoundingClientRect();pointerX=((e.clientX-r.left)/r.width-.5)*.3;pointerY=((e.clientY-r.top)/r.height-.5)*.14;});
 stage.addEventListener('pointerleave',()=>{pointerX=0;pointerY=0;});
-reduced.addEventListener('change',()=>{if(reduced.matches){running=false;cancel();pointerX=pointerY=0;if(!lost&&gl){updateStatus();render();}}});
+reduced.addEventListener('change',()=>setRunning(!reduced.matches));
 document.addEventListener('visibilitychange',()=>{cancel();if(!document.hidden)schedule();});
-canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();lost=true;cancel();canvas.hidden=true;fallback.removeAttribute('hidden');button.disabled=true;button.textContent='Animation unavailable';status.textContent='3D context interrupted. Showing the still lantern illustration.';});
+canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();lost=true;cancel();canvas.hidden=true;fallback.removeAttribute('hidden');if(button){button.disabled=true;button.textContent='Animation unavailable';}if(status)status.textContent='Showing a still lantern.';});
 canvas.addEventListener('webglcontextrestored',()=>{try{initialize();}catch{unavailable();}});
-function unavailable(){cancel();if(gl&&!lost){if(buffer)gl.deleteBuffer(buffer);if(program)gl.deleteProgram(program);}lost=true;canvas.hidden=true;fallback.removeAttribute('hidden');button.disabled=true;button.textContent='Animation unavailable';status.textContent='3D is unavailable in this browser. Showing the still lantern illustration.';}
+function unavailable(){cancel();if(gl&&!lost){if(buffer)gl.deleteBuffer(buffer);if(program)gl.deleteProgram(program);}lost=true;canvas.hidden=true;fallback.removeAttribute('hidden');if(button){button.disabled=true;button.textContent='Animation unavailable';}if(status)status.textContent='Showing a still lantern.';}
 const observer=new ResizeObserver(resize);observer.observe(stage);
 const visibilityObserver=typeof IntersectionObserver==='function'?new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;cancel();if(inView)schedule();},{rootMargin:'80px'}):null;
 if(visibilityObserver)visibilityObserver.observe(stage);

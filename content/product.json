@@ -23,6 +23,18 @@
       "title": "Install Motion Design in your project",
       "outcome": "motion",
       "hostLabel": "Codex / Claude Code project installation; activation not exercised"
+    },
+    {
+      "path": "guides/finance-operations.html",
+      "title": "Check a small finance report with Claude",
+      "outcome": "finance",
+      "hostLabel": "Eligible paid Claude account; browser finance-plugin workflow"
+    },
+    {
+      "path": "guides/deepseek-harness.html",
+      "title": "Start small with DeepSeek Harness",
+      "outcome": "harness",
+      "hostLabel": "DeepSeek developer-preview desktop workflow; separate model access required"
     }
   ],
   "matches": {

@@ -1,0 +1,6 @@
+id,type,item,budget,actual
+R1,revenue,Workshops,6000,6600
+R2,revenue,Materials,4000,4400
+E1,expense,Delivery,3500,3800
+E2,expense,Overhead,2500,2700
+E2,expense,Overhead,2500,2700

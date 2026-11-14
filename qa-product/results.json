@@ -1,0 +1,4276 @@
+{
+  "date": "2026-11-14",
+  "checks": [
+    {
+      "name": "HTTP homepage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Server does not expose vault files",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Demo download serves successfully",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html assets/lantern.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: index.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html setup.html?outcome=website",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html setup.html?outcome=marketing",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html setup.html?outcome=data",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html setup.html?outcome=motion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html assets/covers/motion.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html guides/website-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html assets/covers/website.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html guides/source-backed-marketing.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html assets/covers/marketing.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: index.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: skills.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html popular.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: skills.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: guides.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html assets/covers/motion.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html guides/website-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html assets/covers/website.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html guides/source-backed-marketing.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html assets/covers/marketing.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html guides/install-motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html assets/covers/motion.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html guides/finance-operations.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html assets/covers/website.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html guides/deepseek-harness.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html assets/covers/website.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: setup.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: setup-help.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: setup-help.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: guides/motion-design.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../guides/install-motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../downloads/motion-design-demo.zip",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../demos/motion/candidate.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../assets/motion/baseline.png",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../assets/motion/candidate.png",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../evidence/motion-results.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/motion-design.html ../how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: comparisons.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html evidence/motion-results.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: comparisons.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: how-we-test.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: how-we-test.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: about.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: about.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: guides/website-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: guides/website-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: guides/website-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: guides/website-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: guides/website-design.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/website-design.html ../how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: guides/website-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: guides/source-backed-marketing.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: guides/source-backed-marketing.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: guides/source-backed-marketing.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: guides/source-backed-marketing.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: guides/source-backed-marketing.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/source-backed-marketing.html ../how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: guides/source-backed-marketing.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: guides/install-motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: guides/install-motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: guides/install-motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: guides/install-motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: guides/install-motion-design.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../downloads/motion-design-skill.zip",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/install-motion-design.html ../how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: guides/install-motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: guides/finance-operations.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: guides/finance-operations.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: guides/finance-operations.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: guides/finance-operations.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: guides/finance-operations.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../downloads/finance/sample.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../downloads/finance/bank.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../downloads/finance/ledger.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../downloads/finance/expected-totals.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/finance-operations.html ../how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: guides/finance-operations.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: guides/deepseek-harness.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: guides/deepseek-harness.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: guides/deepseek-harness.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: guides/deepseek-harness.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: guides/deepseek-harness.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: guides/deepseek-harness.html ../how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: guides/deepseek-harness.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: updates.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html guides/finance-operations.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html guides/deepseek-harness.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: updates.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: get-set-up.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html install.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html guides/install-motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: get-set-up.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: install.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: install.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: install.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: install.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html assets/installer.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: install.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html guides/install-motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html downloads/motion-design-skill.zip",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: install.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: install.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: collections.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: collections.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: community.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: community.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: for-creators.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: for-creators.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: popular.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: popular.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: popular.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: popular.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: popular.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html api/top-skills.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: popular.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: popular.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "English release: developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private canonical/meta: developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unique IDs: developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No debug banner: developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html assets/favicon.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html assets/site.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html assets/app.css",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html assets/skills-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html assets/product-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html assets/popular-data.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html assets/app.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html #main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Anchor: developers.html#main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html api/top-skills.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html api/capabilities.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html popular.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html assets/logo.svg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local reference: developers.html how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No fake actionable source: developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Discovery feed has eleven scoped repos",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Discovery values and per-entry freshness",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Capability API uses actual evidence statuses",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Rendered lantern without big pause action",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Footer reduce-animation controls renderer",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "System reduced-motion respected",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "More menu opens with keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Discover catalogue size",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Popular is discoverable from Discover",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Popular fixed scope, not quality ranking",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Popular query filters repositories",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Popular name sort",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Stubbed refresh uses credential-free GitHub reads only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Stubbed rate-limit fallback retains dated snapshot",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Null count and stale snapshot remain explicit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "API docs distinguish private snapshots and planned paid service",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "API example copy (stubbed)",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Finance guide has icon-led steps and outcomes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Guide progress checkbox responds in session",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Planner escapes vision and preserves task",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Planner copy/export identical (stubbed)",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Planned feature clearly unavailable: collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Planned feature clearly unavailable: community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Planned feature clearly unavailable: for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Installer package availability, no folder permissions invoked",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: index.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: skills.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: guides.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: setup.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: setup-help.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: guides/motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: comparisons.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: how-we-test.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: about.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: guides/website-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: guides/source-backed-marketing.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: guides/install-motion-design.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: guides/finance-operations.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: guides/deepseek-harness.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: updates.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: get-set-up.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: install.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: collections.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: community.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: for-creators.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: popular.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px fit: developers.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Mobile navigation opens",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Escape closes mobile navigation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No page JavaScript exceptions",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "No unstubbed external page requests",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "limitations": [
+    "Single isolated headless Edge; no physical device or human usability study",
+    "Clipboard and download stubbed; GitHub refresh stubbed, not live refresh validation",
+    "Installer file-write QA not repeated; prior independent suite remains separate"
+  ],
+  "visualReview": {
+    "opened": [
+      "home-desktop.png",
+      "home-mobile.png",
+      "guide-mobile.png",
+      "popular-mobile.png",
+      "api-mobile.png",
+      "installer-mobile.png"
+    ],
+    "result": "Readable layouts; no horizontal page overflow. Minor Popular name/repository spacing and secondary-link punctuation reported as cosmetic."
+  },
+  "financeFixtureCheck": {
+    "deduplicatedRows": 4,
+    "budgetProfit": 4000,
+    "actualProfit": 4500,
+    "profitVariance": 500,
+    "bankNet": 500,
+    "ledgerNet": 550,
+    "difference": -50,
+    "workflowReproduction": false
+  }
+}

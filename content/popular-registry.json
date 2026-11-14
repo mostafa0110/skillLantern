@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "scope": "Curated shortlist of skill repositories and related agent tooling; not a global GitHub ranking.",
+  "items": [
+    {
+      "id": "ponytail",
+      "name": "Ponytail",
+      "repository": "DietrichGebert/ponytail",
+      "kind": "skill-pack",
+      "limitations": "Author performance claims are not independently verified here. Plugin hooks require Node.js; review hooks before enabling."
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "name": "UI UX Pro Max",
+      "repository": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "kind": "skill-pack",
+      "limitations": "Repository-level stars; design quality and host compatibility are not validated here."
+    },
+    {
+      "id": "anthropic-skills",
+      "name": "Anthropic Skills",
+      "repository": "anthropics/skills",
+      "kind": "collection",
+      "limitations": "Collection stars apply to the repository, not each skill. Review individual licensing and requirements."
+    },
+    {
+      "id": "vercel-agent-skills",
+      "name": "Vercel Agent Skills",
+      "repository": "vercel-labs/agent-skills",
+      "kind": "collection",
+      "limitations": "Collection stars apply to the repository, not individual skills."
+    },
+    {
+      "id": "superpowers",
+      "name": "Superpowers",
+      "repository": "obra/superpowers",
+      "kind": "framework/harness",
+      "limitations": "A broader workflow framework with skills, not a single drop-in skill."
+    },
+    {
+      "id": "everything-claude-code",
+      "name": "Everything Claude Code",
+      "repository": "affaan-m/ECC",
+      "kind": "framework/harness",
+      "limitations": "Includes configurations, hooks and other tooling beyond skills; review executable components before use."
+    },
+    {
+      "id": "impeccable",
+      "name": "Impeccable",
+      "repository": "pbakaus/impeccable",
+      "kind": "skill-pack",
+      "limitations": "Design skill pack; repository popularity is not a quality or accessibility audit."
+    },
+    {
+      "id": "taste-skill",
+      "name": "Taste Skill",
+      "repository": "Leonxlnx/taste-skill",
+      "kind": "skill-pack",
+      "limitations": "Design guidance; visual outcomes and host compatibility are not validated here."
+    },
+    {
+      "id": "emil-skills",
+      "name": "Emil Kowalski Skills",
+      "repository": "emilkowalski/skills",
+      "kind": "collection",
+      "limitations": "Collection-level stars; check each skill's requirements before use."
+    },
+    {
+      "id": "motion-design",
+      "name": "Motion Design Skill",
+      "repository": "LottieFiles/motion-design-skill",
+      "kind": "skill-pack",
+      "limitations": "Motion tooling may have additional runtime requirements; no installation was performed."
+    },
+    {
+      "id": "threejs-skills",
+      "name": "Three.js Skills",
+      "repository": "CloudAI-X/threejs-skills",
+      "kind": "collection",
+      "limitations": "Specialist Three.js skills; repository stars do not validate generated code."
+    }
+  ]
+}
