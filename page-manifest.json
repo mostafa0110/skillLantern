@@ -40,5 +40,10 @@
   "capabilities/notebook-research.html",
   "capabilities/claude-appearance.html",
   "guides/website-upgrades.html",
-  "guides/finance-upgrades.html"
+  "guides/finance-upgrades.html",
+  "collections/design.html",
+  "collections/development.html",
+  "collections/writing.html",
+  "collections/spreadsheets.html",
+  "guides/plugin-worth-it.html"
 ]

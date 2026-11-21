@@ -75,4 +75,8 @@ def apply_release(base, dist, pages, skills, guides, fallback):
     css=(base/'discovery.css').read_text(encoding='utf-8');js=(base/'discovery.js').read_text(encoding='utf-8')
     (dist/'assets/discovery.css').write_text(css,encoding='utf-8')
     (dist/'assets/discovery.js').write_text('window.SKILLLANTERN_LIBRARY='+json.dumps(profiles,ensure_ascii=False)+';\n'+js,encoding='utf-8')
+    from best_skills import add_best_skills
+    add_best_skills(pages)
+    from chase_compare import apply_comparison
+    apply_comparison(base, dist, pages)
     return pages
