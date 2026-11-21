@@ -1,25 +1,34 @@
 # SkillLantern website
 
-English-first static product, hosted as an owner-private Sites preview. Root coordinates
-publishing; source edits do not change its audience. Navigation includes Discover, Guides, Get set up, Updates and More, with Popular prominently
-linked from Discover. No billing, accounts or recurring refresh is active.
+English-first static product. Root coordinates hosting and publishing; source edits do not
+change audience. Navigation is Explore, Guides, Popular and My setup. Visitors search by task,
+filter by app/task/kind, read stable capability profiles, save a shortlist locally and copy or
+download a setup brief. No accounts, billing or recurring refresh is active.
 
-## Build and data
+## Build and data ? 21 November 2026
 
-Run `python build.py`. This validates evidence and emits the page manifest, static JSON feeds,
-verified skill ZIP and browser-installer payload. Public source snapshots make a website-only
-checkout rebuildable. See the evidence notes below for scope and refresh requirements.
+Run `python build.py`. It validates the existing evidence ledger and emits HTML, static JSON
+feeds, the verified Motion Design ZIP and its browser-installer payload. Runtime output is
+standalone. `content/catalogue.json` retains the evidence-backed base records;
+`content/launch-library.json` supplies the reviewed release profiles and practical guides.
+`release_content.py` renders source-led guide content; `discovery_release.py`, `discovery.js`
+and `discovery.css` implement discovery, stable profiles and the browser-local shortlist.
 
-`content/popular-registry.json` is the fixed discovery shortlist; `popular-snapshot.json`
-contains dated GitHub metadata. Run the existing `refresh_popular.py` manually when an update
-is needed, review the changed snapshot, then rebuild. The browser refresh is optional and
-contacts public GitHub only after a click, with at most three requests in flight. Counts stay
-in memory. A rate limit restores the published snapshot; no client secrets are used.
+Published feeds are `dist/api/top-skills.json` and `dist/api/capabilities.json`. Capability
+schemaVersion 1 remains, with additive app/task/setup fields and preserved base record fields.
+These are dated static snapshots. `developers.html` links directly to them.
 
-Published feeds: `dist/api/top-skills.json` and `dist/api/capabilities.json`. They are static
-snapshots with freshness and scope labels. Owner-private hosting access applies. The proposed
-paid Developer API is documented on developers.html; keys, metering, history and recommendation
-endpoints are planned and not implemented.
+The default build preserves the private preview origin and `noindex,nofollow`; robots disallows
+crawling. Only for an explicitly authorised public deployment, set
+`SKILLLANTERN_PUBLIC_ORIGIN` to its HTTPS origin (no path) before building. That build uses
+that canonical origin, indexable metadata, robots and a sitemap excluding contextual legacy
+routes and the browser-local My setup page. Hosting audience is a separate deployment setting.
+An isolated website-only temporary build verified this option on 21 November 2026.
+
+`content/popular-registry.json` is the fixed shortlist; `popular-snapshot.json` contains dated
+GitHub metadata. Run `refresh_popular.py` manually, review the snapshot and rebuild. The browser
+refresh contacts public GitHub only after a click. Counts stay in memory; no client secrets
+are used. The source-reviewed catalogue and Popular repository count are separate collections.
 
 ## Local file installer
 

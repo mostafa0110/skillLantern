@@ -7,6 +7,14 @@ import re
 import shutil
 import hashlib
 import zipfile
+import os
+from urllib.parse import urlsplit
+PUBLIC_ORIGIN=os.environ.get("SKILLLANTERN_PUBLIC_ORIGIN", "").rstrip("/")
+if PUBLIC_ORIGIN:
+    parsed_origin=urlsplit(PUBLIC_ORIGIN)
+    if parsed_origin.scheme!="https" or not parsed_origin.netloc or parsed_origin.path or parsed_origin.query or parsed_origin.fragment or parsed_origin.username or parsed_origin.password:
+        raise ValueError("SKILLLANTERN_PUBLIC_ORIGIN must be an HTTPS origin without a path or credentials")
+SITE_ORIGIN=PUBLIC_ORIGIN or "https://skilllantern.happymoth22.chatgpt.site"
 
 BASE = Path(__file__).resolve().parent
 VAULT = BASE.parent
@@ -88,11 +96,12 @@ def card(skill):
 
 def wrap(page):
     path = Path(page['path']); root = '../' * (len(path.parts)-1)
-    nav = ''.join(f'<a href="{root}{url}"'+(' aria-current="page"' if key==page.get('activeNav') else '')+f'>{label}</a>' for key,url,label in [('skills','skills.html','Discover'),('guides','guides.html','Guides'),('setup','get-set-up.html','Get set up'),('updates','updates.html','Updates')])
-    nav += '<details class="nav-more"><summary>More</summary><div class="more-menu">'+''.join(f'<a href="{root}{href}">{label}</a>' for href,label in [('developers.html','Developer API'),('comparisons.html','Comparison'),('collections.html','Collections'),('community.html','Community'),('for-creators.html','For creators'),('setup-help.html','Plans & help'),('about.html','About')])+'</div></details>'
+    nav = ''.join(f'<a href="{root}{url}"'+(' aria-current="page"' if key==page.get('activeNav') else '')+f'>{label}</a>' for key,url,label in [('skills','skills.html','Explore'),('guides','guides.html','Guides'),('popular','popular.html','Popular'),('setup','get-set-up.html','My setup')])
     wordmark=f'<img src="{root}assets/logo.svg" width="34" height="44" alt=""><span>SkillLantern</span>'
     title=esc(page['title']); description=esc(page['description'])
-    html=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title} · SkillLantern</title><meta name="description" content="{description}"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#151b1a"><meta property="og:title" content="{title} · SkillLantern"><meta property="og:description" content="{description}"><meta property="og:type" content="website"><meta property="og:url" content="https://skilllantern.happymoth22.chatgpt.site/{page["path"]}"><link rel="canonical" href="https://skilllantern.happymoth22.chatgpt.site/{page["path"]}"><link rel="icon" href="{root}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{root}assets/site.css"><link rel="stylesheet" href="{root}assets/app.css"><script defer src="{root}assets/skills-data.js"></script><script defer src="{root}assets/product-data.js"></script><script defer src="{root}assets/popular-data.js"></script><script defer src="{root}assets/app.js"></script>{'<script defer src="'+root+'assets/lantern.js"></script>' if page.get('lantern') else ''}{'<script defer src="'+root+'assets/installer.js"></script>' if page.get('installer') else ''}</head><body data-root="{root}"><a class="skip-link" href="#main">Skip to content</a><div class="shell"><header class="site-header"><a class="brand" href="{root}index.html" aria-label="SkillLantern home">{wordmark}</a><button class="menu-button" id="menu-button" type="button" aria-controls="site-nav" aria-expanded="false" hidden>Menu</button><nav class="site-nav" id="site-nav" aria-label="Main navigation">{nav}</nav></header><main id="main">{page['body'].replace('{{root}}',root)}</main><footer class="site-footer"><div><a class="brand" href="{root}index.html">{wordmark}</a><p>A clearer path from AI possibility to useful work.</p></div><nav aria-label="Footer"><a href="{root}about.html">About &amp; privacy</a><a href="{root}setup-help.html">Implementation help</a><a href="{root}comparisons.html">Test comparison</a><a href="{root}how-we-test.html">Evidence policy</a><details class="motion-settings"><summary>Motion settings</summary><label><input id="reduce-motion" type="checkbox"> Reduce animation</label></details></nav></footer></div><dialog class="dialog" id="skill-dialog" aria-labelledby="skill-dialog-title"><button class="dialog-close" type="button" aria-label="Close source note">×</button><div id="skill-dialog-content"></div></dialog></body></html>'''
+    html=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title} · SkillLantern</title><meta name="description" content="{description}"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#151b1a"><meta property="og:title" content="{title} · SkillLantern"><meta property="og:description" content="{description}"><meta property="og:type" content="website"><meta property="og:url" content="https://skilllantern.happymoth22.chatgpt.site/{page["path"]}"><link rel="canonical" href="https://skilllantern.happymoth22.chatgpt.site/{page["path"]}"><link rel="icon" href="{root}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{root}assets/site.css"><link rel="stylesheet" href="{root}assets/app.css"><script defer src="{root}assets/skills-data.js"></script><script defer src="{root}assets/product-data.js"></script><script defer src="{root}assets/popular-data.js"></script><script defer src="{root}assets/app.js"></script><link rel="stylesheet" href="{root}assets/discovery.css"><script defer src="{root}assets/discovery.js"></script>{'<script defer src="'+root+'assets/lantern.js"></script>' if page.get('lantern') else ''}{'<script defer src="'+root+'assets/installer.js"></script>' if page.get('installer') else ''}</head><body data-root="{root}"><a class="skip-link" href="#main">Skip to content</a><div class="shell"><header class="site-header"><a class="brand" href="{root}index.html" aria-label="SkillLantern home">{wordmark}</a><button class="menu-button" id="menu-button" type="button" aria-controls="site-nav" aria-expanded="false" hidden>Menu</button><nav class="site-nav" id="site-nav" aria-label="Main navigation">{nav}</nav></header><main id="main">{page['body'].replace('{{root}}',root)}</main><footer class="site-footer"><div><a class="brand" href="{root}index.html">{wordmark}</a><p>A clearer path from AI possibility to useful work.</p></div><nav aria-label="Footer"><a href="{root}about.html">About &amp; privacy</a><a href="{root}skills.html">Explore capabilities</a><a href="{root}comparisons.html">Test comparison</a><a href="{root}how-we-test.html">Evidence policy</a><details class="motion-settings"><summary>Motion settings</summary><label><input id="reduce-motion" type="checkbox"> Reduce animation</label></details></nav></footer></div><dialog class="dialog" id="skill-dialog" aria-labelledby="skill-dialog-title"><button class="dialog-close" type="button" aria-label="Close source note">×</button><div id="skill-dialog-content"></div></dialog></body></html>'''
+    html=html.replace('https://skilllantern.happymoth22.chatgpt.site',SITE_ORIGIN)
+    if PUBLIC_ORIGIN: html=html.replace('name="robots" content="noindex,nofollow"','name="robots" content="index,follow"')
     target=DIST/path; target.parent.mkdir(parents=True,exist_ok=True); target.write_text(html,encoding='utf-8')
 
 study_path=VAULT/'03_Product/Lantern-3D-Study.html'
@@ -170,6 +179,8 @@ for expansion in EXPANSION:
 # Expansion pages can replace a deliberate topic placeholder, never create duplicate routes.
 unique_pages={p['path']:p for p in pages}
 for p in EXPANSION:unique_pages[p['path']]=p
+from discovery_release import apply_release
+unique_pages = apply_release(BASE, DIST, unique_pages, SKILLS, GUIDES, fallback)
 pages=list(unique_pages.values())
 for page in pages:
     if page.get('steps'):
@@ -219,6 +230,13 @@ with zipfile.ZipFile(VAULT/'03_Product/Guides/motion-design-demo.zip') as source
         if len(data)!=entry['size'] or hashlib.sha256(data).hexdigest()!=entry['sha256']:raise ValueError('Installer manifest mismatch')
     (DIST/'assets/installer-package.json').write_text(json.dumps(package,indent=2)+'\n',encoding='utf-8')
     print(f'Packaged {len(payload)} skill files (Markdown and MIT licence only)')
-(DIST/'robots.txt').write_text('User-agent: *\nDisallow: /\n',encoding='utf-8')
+if PUBLIC_ORIGIN:
+    excluded={'setup.html','setup-help.html','collections.html','community.html','for-creators.html','updates.html','developers.html','get-set-up.html'}
+    urls=''.join('<url><loc>'+esc(SITE_ORIGIN+'/'+p['path'])+'</loc></url>' for p in pages if p['path'] not in excluded)
+    (DIST/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+urls+'</urlset>',encoding='utf-8')
+    (DIST/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+SITE_ORIGIN+'/sitemap.xml\n',encoding='utf-8')
+else:
+    (DIST/'robots.txt').write_text('User-agent: *\nDisallow: /\n',encoding='utf-8')
+    if (DIST/'sitemap.xml').exists(): (DIST/'sitemap.xml').unlink()
 (BASE/'page-manifest.json').write_text(json.dumps([p['path'] for p in pages],indent=2)+'\n',encoding='utf-8')
 print(f'Built {len(pages)} English pages and {len(SKILLS)} capabilities')

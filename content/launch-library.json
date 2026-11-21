@@ -1,0 +1,849 @@
+{
+  "profiles": [
+    {
+      "id": "ui-ux-pro-max",
+      "name": "UI UX Pro Max",
+      "summary": "Choose typography, colour and spacing before building an interface.",
+      "apps": [
+        "Codex CLI",
+        "Claude Code",
+        "Cursor"
+      ],
+      "tasks": [
+        "Design a website",
+        "Create a design system"
+      ],
+      "kind": "toolkit",
+      "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "setupSourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Codex CLI route: In your website project, review the README and run npx ui-ux-pro-max-cli init --ai codex for Codex.",
+        "Reload Codex; invoke $ui-ux-pro-max with your audience and visual references. Expect design guidance, not finished components."
+      ],
+      "requirements": [
+        "Node/npm",
+        "Python 3.x",
+        "Website project"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "A coordinated visual direction",
+      "example": "Plan a craft-course homepage with clear type, warm colour and one main action.",
+      "useWhen": "Your design decisions are inconsistent.",
+      "skipWhen": "A complete design system already answers these questions.",
+      "hostBoundary": "Use the named app and host-specific setup. An instruction file alone does not provide tools or account access. The steps shown are the Codex CLI route; use the upstream adapter for other supported hosts.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": "guides/website-upgrades.html",
+      "publisher": "nextlevelbuilder",
+      "setupHost": "Codex CLI",
+      "title": "UI UX Pro Max",
+      "task": "Design a website",
+      "type": "toolkit"
+    },
+    {
+      "id": "threejs-web",
+      "name": "Three.js Skills - threejs-web",
+      "summary": "Build a real rendered scene with camera, interaction and a fallback.",
+      "apps": [
+        "Codex CLI",
+        "Claude Code",
+        "Cursor"
+      ],
+      "tasks": [
+        "Build interactive 3D",
+        "Design a website"
+      ],
+      "kind": "skill",
+      "sourceUrl": "https://github.com/cesartevisual/threejs-skills/blob/main/skills/threejs-web/SKILL.md",
+      "setupSourceUrl": "https://github.com/cesartevisual/threejs-skills/blob/main/skills/threejs-web/SKILL.md",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Codex CLI route: Review cesartevisual/threejs-skills. In the project run npx skills add cesartevisual/threejs-skills --agent codex --skill threejs-web.",
+        "Invoke $threejs-web. Expect a responsive canvas plan, loading/error states and semantic controls."
+      ],
+      "requirements": [
+        "Node/npm",
+        "Three.js project dependencies",
+        "Compatible browser/GPU"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "An interactive 3D hero",
+      "example": "A lantern visitors can rotate while the main action remains outside the canvas.",
+      "useWhen": "Interaction helps explain an object.",
+      "skipWhen": "A static illustration does the job.",
+      "hostBoundary": "Independent cesartevisual community collection; not official Three.js tooling. This is the exact threejs-web skill, not CloudAI-X/threejs-skills. The steps shown are the Codex CLI route; use the upstream adapter for other supported hosts.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": "guides/website-upgrades.html",
+      "publisher": "cesartevisual",
+      "setupHost": "Codex CLI",
+      "title": "Three.js Skills - threejs-web",
+      "task": "Build interactive 3D",
+      "type": "skill"
+    },
+    {
+      "id": "impeccable",
+      "name": "Impeccable",
+      "summary": "Give critique, audit and polish passes a clear purpose.",
+      "apps": [
+        "Codex CLI",
+        "Claude Code",
+        "Cursor"
+      ],
+      "tasks": [
+        "Improve an interface",
+        "Review accessibility"
+      ],
+      "kind": "toolkit",
+      "sourceUrl": "https://github.com/pbakaus/impeccable",
+      "setupSourceUrl": "https://github.com/pbakaus/impeccable",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Codex CLI route: Review installer hooks and telemetry settings; run npx impeccable install --providers=codex --scope=project from the project.",
+        "Reload and invoke $impeccable init. Request a critique before a focused polish pass. Expect actionable findings, not accessibility certification."
+      ],
+      "requirements": [
+        "Node/npm",
+        "Existing interface",
+        "Engine cache outside project"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "A focused improvement list",
+      "example": "Clarify a hero hierarchy before tuning animation.",
+      "useWhen": "There is an interface to inspect.",
+      "skipWhen": "You have no first draft.",
+      "hostBoundary": "Use the named app and host-specific setup. An instruction file alone does not provide tools or account access. The steps shown are the Codex CLI route; use the upstream adapter for other supported hosts.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": "guides/website-upgrades.html",
+      "publisher": "Paul Bakaus",
+      "setupHost": "Codex CLI",
+      "title": "Impeccable",
+      "task": "Improve an interface",
+      "type": "toolkit"
+    },
+    {
+      "id": "agent-browser",
+      "name": "agent-browser",
+      "summary": "Inspect controls and layouts through browser automation.",
+      "apps": [
+        "Codex CLI",
+        "Claude Code",
+        "Cursor"
+      ],
+      "tasks": [
+        "Check a website",
+        "Automate browser checks"
+      ],
+      "kind": "tool",
+      "sourceUrl": "https://agent-browser.dev/installation",
+      "setupSourceUrl": "https://agent-browser.dev/installation",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Codex CLI route: In the project, review and run npm install agent-browser, then npx agent-browser install to download Chrome.",
+        "Use the linked Skills page to add companion instructions with npx skills add vercel-labs/agent-browser. Expect a usable CLI and browser; test one harmless local page."
+      ],
+      "requirements": [
+        "Node/npm",
+        "Browser download",
+        "Local app"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "Reproducible browser observations",
+      "example": "Check that a mobile navigation opens and its links are reachable.",
+      "useWhen": "Your assistant lacks browser tools.",
+      "skipWhen": "Existing browser tools already cover the task.",
+      "hostBoundary": "Use the named app and host-specific setup. An instruction file alone does not provide tools or account access. The steps shown are the Codex CLI route; use the upstream adapter for other supported hosts.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": "guides/website-upgrades.html",
+      "publisher": "Vercel Labs",
+      "setupHost": "Codex CLI",
+      "title": "agent-browser",
+      "task": "Check a website",
+      "type": "tool"
+    },
+    {
+      "id": "ponytail",
+      "name": "Ponytail",
+      "summary": "Structure coding work as small complete changes with review and audit guidance.",
+      "apps": [
+        "Codex CLI",
+        "Claude Code"
+      ],
+      "tasks": [
+        "Develop software",
+        "Review code"
+      ],
+      "kind": "toolkit",
+      "sourceUrl": "https://github.com/DietrichGebert/ponytail/blob/main/INSTALL.md",
+      "setupSourceUrl": "https://github.com/DietrichGebert/ponytail/blob/main/INSTALL.md",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Codex CLI route: Read INSTALL.md and choose your exact host adapter. Review lifecycle hooks before enabling them.",
+        "For instruction-only Codex use, place the canonical skills/ponytail/SKILL.md in .agents/skills/ponytail/. Expect guidance only; this does not install plugin hooks."
+      ],
+      "requirements": [
+        "Coding project",
+        "Node for plugin hooks"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "A bounded implementation and review pass",
+      "example": "Implement one validation rule, run relevant checks and report remaining gaps.",
+      "useWhen": "You need a more explicit coding workflow.",
+      "skipWhen": "Your existing repository instructions already cover the workflow.",
+      "hostBoundary": "A coding toolkit with host adapters, not a standalone harness. Instruction-only context and full plugin behavior differ. The steps shown are the Codex CLI route; use the upstream adapter for other supported hosts.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": null,
+      "publisher": "DietrichGebert",
+      "setupHost": "Codex CLI",
+      "title": "Ponytail",
+      "task": "Develop software",
+      "type": "toolkit"
+    },
+    {
+      "id": "motion-design",
+      "name": "Motion Design",
+      "summary": "Plan purposeful timing, easing and feedback.",
+      "apps": [
+        "Codex CLI",
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot"
+      ],
+      "tasks": [
+        "Animate feedback",
+        "Design motion"
+      ],
+      "kind": "skill",
+      "sourceUrl": "https://github.com/LottieFiles/motion-design-skill",
+      "setupSourceUrl": "https://github.com/LottieFiles/motion-design-skill",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Codex CLI route: Review the repository; run npx skills add LottieFiles/motion-design-skill and select your host and project scope.",
+        "In Codex invoke $motion-design for one transition. Expect a timing/easing plan and reduced-motion behavior."
+      ],
+      "requirements": [
+        "Node/npm for installer",
+        "An interface implementation"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "Clear loading, success and error states",
+      "example": "Give a save button distinct waiting, success and retry feedback.",
+      "useWhen": "Movement helps explain a state change.",
+      "skipWhen": "Motion distracts from reading.",
+      "hostBoundary": "Design guidance across implementations; no Lottie account is required by the documented skill. Existing local Motion guide used explicit context, not native skill installation. The steps shown are the Codex CLI route; use the upstream adapter for other supported hosts.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": "guides/motion-design.html",
+      "publisher": "LottieFiles",
+      "setupHost": "Codex CLI",
+      "title": "Motion Design",
+      "task": "Animate feedback",
+      "type": "skill"
+    },
+    {
+      "id": "claude-finance",
+      "name": "Finance by Anthropic",
+      "summary": "Prepare variance and reconciliation drafts from supplied files.",
+      "apps": [
+        "Claude web chat",
+        "Claude Desktop Chat",
+        "Claude Cowork",
+        "Claude Code"
+      ],
+      "tasks": [
+        "Explain a budget",
+        "Reconcile exports"
+      ],
+      "kind": "plugin",
+      "sourceUrl": "https://claude.com/marketplace/plugins/finance",
+      "setupSourceUrl": "https://support.claude.com/en/articles/13837440-use-plugins-in-claude",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Open Customize > Plugins > Discover. Select Finance by Anthropic and choose Add; check organisation permissions.",
+        "In a fresh chat use the / or + menu to find variance-analysis. Attach a small authorised file. Expect the workflow to appear before proceeding."
+      ],
+      "requirements": [
+        "Paid Claude plan",
+        "Organisation permission",
+        "Authorised files"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "A checkable finance draft",
+      "example": "Find duplicate rows before explaining a budget variance.",
+      "useWhen": "You have clean accounting inputs.",
+      "skipWhen": "The dataset needs profiling first.",
+      "hostBoundary": "Chat runs skills/commands; hooks and sub-agents run in Cowork or Claude Code. Code account sync requires a supported current version. No connector is needed for the practice files.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": "guides/finance-upgrades.html",
+      "publisher": "Anthropic",
+      "setupHost": "Claude web chat",
+      "title": "Finance by Anthropic",
+      "task": "Explain a budget",
+      "type": "plugin"
+    },
+    {
+      "id": "claude-data",
+      "name": "Data by Anthropic",
+      "summary": "Profile files, write SQL and draft charts or dashboards.",
+      "apps": [
+        "Claude web chat",
+        "Claude Desktop Chat",
+        "Claude Cowork",
+        "Claude Code"
+      ],
+      "tasks": [
+        "Explore a dataset",
+        "Build a dashboard"
+      ],
+      "kind": "plugin",
+      "sourceUrl": "https://claude.com/marketplace/plugins/data",
+      "setupSourceUrl": "https://support.claude.com/en/articles/13837440-use-plugins-in-claude",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Open Customize > Plugins > Discover. Select Data by Anthropic and choose Add; check organisation permissions.",
+        "In a fresh chat use the / or + menu to find explore-data. Attach a small authorised file. Expect the workflow to appear before proceeding."
+      ],
+      "requirements": [
+        "Paid Claude plan",
+        "Organisation permission",
+        "Authorised files"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "Data-quality findings and analysis",
+      "example": "Find duplicate IDs and missing dates in a sales export.",
+      "useWhen": "You need to understand a dataset.",
+      "skipWhen": "A simple sum answers the question.",
+      "hostBoundary": "Chat runs skills/commands; hooks and sub-agents run in Cowork or Claude Code. Code account sync requires a supported current version. No connector is needed for the practice files.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": "guides/finance-upgrades.html",
+      "publisher": "Anthropic",
+      "setupHost": "Claude web chat",
+      "title": "Data by Anthropic",
+      "task": "Explore a dataset",
+      "type": "plugin"
+    },
+    {
+      "id": "claude-operations",
+      "name": "Operations by Anthropic",
+      "summary": "Compare vendors, document processes and plan capacity.",
+      "apps": [
+        "Claude web chat",
+        "Claude Desktop Chat",
+        "Claude Cowork",
+        "Claude Code"
+      ],
+      "tasks": [
+        "Compare vendors",
+        "Document a process"
+      ],
+      "kind": "plugin",
+      "sourceUrl": "https://claude.com/marketplace/plugins/operations",
+      "setupSourceUrl": "https://support.claude.com/en/articles/13837440-use-plugins-in-claude",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Open Customize > Plugins > Discover. Select Operations by Anthropic and choose Add; check organisation permissions.",
+        "In a fresh chat use the / or + menu to find vendor-related workflow. Attach a small authorised file. Expect the workflow to appear before proceeding."
+      ],
+      "requirements": [
+        "Paid Claude plan",
+        "Organisation permission",
+        "Authorised files"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "A structured decision draft",
+      "example": "Compare renewal quotes, switching effort and missing terms.",
+      "useWhen": "You have authorised quotes and process notes.",
+      "skipWhen": "You need bookkeeping or a legal opinion.",
+      "hostBoundary": "Chat runs skills/commands; hooks and sub-agents run in Cowork or Claude Code. Code account sync requires a supported current version. No connector is needed for the practice files.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": "guides/finance-upgrades.html",
+      "publisher": "Anthropic",
+      "setupHost": "Claude web chat",
+      "title": "Operations by Anthropic",
+      "task": "Compare vendors",
+      "type": "plugin"
+    },
+    {
+      "id": "claude-legal",
+      "name": "Legal by Anthropic",
+      "summary": "Organise contract clauses and questions for counsel.",
+      "apps": [
+        "Claude web chat",
+        "Claude Desktop Chat",
+        "Claude Cowork",
+        "Claude Code"
+      ],
+      "tasks": [
+        "Review a contract",
+        "Prepare counsel questions"
+      ],
+      "kind": "plugin",
+      "sourceUrl": "https://claude.com/marketplace/plugins/legal",
+      "setupSourceUrl": "https://support.claude.com/en/articles/13837440-use-plugins-in-claude",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Open Customize > Plugins > Discover. Select Legal by Anthropic and choose Add; check organisation permissions.",
+        "In a fresh chat use the / or + menu to find review-contract. Attach a small authorised file. Expect the workflow to appear before proceeding."
+      ],
+      "requirements": [
+        "Paid Claude plan",
+        "Organisation permission",
+        "Authorised files"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "A clause-referenced review handoff",
+      "example": "List renewal obligations and unclear definitions.",
+      "useWhen": "You are preparing for licensed counsel review.",
+      "skipWhen": "You need a final legal opinion.",
+      "hostBoundary": "Chat runs skills/commands; hooks and sub-agents run in Cowork or Claude Code. Code account sync requires a supported current version. No connector is needed for the practice files.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": "guides/finance-upgrades.html",
+      "publisher": "Anthropic",
+      "setupHost": "Claude web chat",
+      "title": "Legal by Anthropic",
+      "task": "Review a contract",
+      "type": "plugin"
+    },
+    {
+      "id": "doc-coauthoring",
+      "name": "Doc Coauthoring",
+      "summary": "Develop a document through context gathering, refinement and reader questions.",
+      "apps": [
+        "Claude with skill support",
+        "Claude Code"
+      ],
+      "tasks": [
+        "Write a proposal",
+        "Draft documentation"
+      ],
+      "kind": "skill",
+      "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/doc-coauthoring/SKILL.md",
+      "setupSourceUrl": "https://github.com/anthropics/skills#try-in-claude-code-claudeai-and-the-api",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Claude Code route: read the official repository, then run /plugin marketplace add anthropics/skills. Use /plugin install example-skills@anthropic-agent-skills; this installs the named collection, not just one file.",
+        "Ask for a proposal using the workflow; supply audience, purpose and source notes. Expect context questions before a structured draft."
+      ],
+      "requirements": [
+        "Skill-capable host",
+        "Source notes"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "A source-grounded document draft",
+      "example": "Turn project notes into a decision proposal with unresolved questions.",
+      "useWhen": "A complex document needs structure.",
+      "skipWhen": "A one-sentence edit is enough.",
+      "hostBoundary": "Official Anthropic skill instructions; availability and installation differ by Claude host. Simulated reader review is not human validation. The concrete setup shown uses Claude Code; Claude web has separate native availability and account permissions.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": null,
+      "publisher": "Anthropic",
+      "setupHost": "Claude Code",
+      "title": "Doc Coauthoring",
+      "task": "Write a proposal",
+      "type": "skill"
+    },
+    {
+      "id": "notebook-research",
+      "name": "NotebookLM / Gemini Notebook",
+      "summary": "Build a marketing brief from a selected source set and inspect citations.",
+      "apps": [
+        "Google notebook web app"
+      ],
+      "tasks": [
+        "Research marketing",
+        "Summarise sources"
+      ],
+      "kind": "native app",
+      "sourceUrl": "https://support.google.com/gemininotebook/answer/16215270?hl=en",
+      "setupSourceUrl": "https://support.google.com/gemininotebook/answer/16215270?hl=en",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Open notebook.google.com with eligible access and create a notebook. Choose Add sources and upload or paste three owned/public documents.",
+        "Open each import to verify its text; ask for supported benefits and missing facts with citations. Expect links back to selected sources."
+      ],
+      "requirements": [
+        "Browser",
+        "Eligible Google account",
+        "Public or owned source documents"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "A traceable campaign brief",
+      "example": "Combine a product sheet, audience note and campaign recap.",
+      "useWhen": "You need grounded synthesis across sources.",
+      "skipWhen": "The source set is missing the facts you need.",
+      "hostBoundary": "Browser route, not a Codex plugin. Source tutorial calls it NotebookLM; current Google help labels it Gemini Notebook. Account availability and limits vary.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": "guides/source-backed-marketing.html",
+      "publisher": "Google",
+      "setupHost": "Google notebook web app",
+      "title": "NotebookLM / Gemini Notebook",
+      "task": "Research marketing",
+      "type": "native app"
+    },
+    {
+      "id": "xlsx",
+      "name": "XLSX",
+      "summary": "Prepare spreadsheet formulas, formatting and output checks.",
+      "apps": [
+        "Claude with file/skill tools",
+        "Claude Code"
+      ],
+      "tasks": [
+        "Create a spreadsheet",
+        "Clean Excel data"
+      ],
+      "kind": "skill",
+      "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md",
+      "setupSourceUrl": "https://github.com/anthropics/skills#try-in-claude-code-claudeai-and-the-api",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Claude Code route: read the official repository, then run /plugin marketplace add anthropics/skills. Use /plugin install document-skills@anthropic-agent-skills; this installs the named collection, not just one file.",
+        "Ask for a workbook with a source tab, formulas and a validation summary. Expect a downloadable file; check formulas and totals yourself."
+      ],
+      "requirements": [
+        "Spreadsheet tooling",
+        "Recalculation support where required",
+        "File access"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "A checkable workbook",
+      "example": "Convert an owned CSV into a monthly summary with visible formulas.",
+      "useWhen": "You need an editable spreadsheet output.",
+      "skipWhen": "A plain table is sufficient.",
+      "hostBoundary": "SKILL.md does not install Python libraries or provide a spreadsheet engine. Host tooling and module-specific licence terms need checking. The concrete setup shown uses Claude Code; Claude web has separate native availability and account permissions.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": null,
+      "publisher": "Anthropic",
+      "setupHost": "Claude Code",
+      "title": "XLSX",
+      "task": "Create a spreadsheet",
+      "type": "skill"
+    },
+    {
+      "id": "webapp-testing",
+      "name": "Webapp Testing",
+      "summary": "Exercise a local app using Playwright interactions and logs.",
+      "apps": [
+        "Claude Code",
+        "Coding agent with Python tools"
+      ],
+      "tasks": [
+        "Test software",
+        "Check a website"
+      ],
+      "kind": "skill",
+      "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/webapp-testing/SKILL.md",
+      "setupSourceUrl": "https://github.com/anthropics/skills#try-in-claude-code-claudeai-and-the-api",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Claude Code route: read the official repository, then run /plugin marketplace add anthropics/skills. Use /plugin install example-skills@anthropic-agent-skills; this installs the named collection, not just one file.",
+        "Give the local app URL and one behavior to verify. Expect actual browser assertions, screenshots/logs and a pass/fail report."
+      ],
+      "requirements": [
+        "Python Playwright",
+        "Browser",
+        "Local development server"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "Evidence for a local user flow",
+      "example": "Submit an empty form and verify a visible validation error.",
+      "useWhen": "You need repeatable interaction checks.",
+      "skipWhen": "Existing tests already cover this behavior.",
+      "hostBoundary": "A local development workflow, not a browser extension or chat-only capability. Skill installation has not been validated here. The concrete setup shown uses Claude Code; Claude web has separate native availability and account permissions.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": null,
+      "publisher": "Anthropic",
+      "setupHost": "Claude Code",
+      "title": "Webapp Testing",
+      "task": "Test software",
+      "type": "skill"
+    },
+    {
+      "id": "react-best-practices",
+      "name": "React Best Practices",
+      "summary": "Review React and Next.js performance patterns against concrete code.",
+      "apps": [
+        "Codex CLI",
+        "Claude Code",
+        "Other compatible coding agents"
+      ],
+      "tasks": [
+        "Review React code",
+        "Improve performance"
+      ],
+      "kind": "skill",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-best-practices/SKILL.md",
+      "setupSourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-best-practices/SKILL.md",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Codex CLI route: Read Vercel's current agent-skills README and select react-best-practices for your coding host.",
+        "Give the agent one slow route and relevant source files. Request findings with code references before edits. Expect recommendations; measure any resulting performance change."
+      ],
+      "requirements": [
+        "React/Next.js project",
+        "Matching framework version"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "A prioritised code-review draft",
+      "example": "Inspect sequential data fetching on a Next.js page.",
+      "useWhen": "Your project uses React or Next.js.",
+      "skipWhen": "Your application uses a different framework.",
+      "hostBoundary": "Framework-specific rules; no performance improvement is established without measuring the actual app. The steps shown are the Codex CLI route; use the upstream adapter for other supported hosts.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": null,
+      "publisher": "Vercel",
+      "setupHost": "Codex CLI",
+      "title": "React Best Practices",
+      "task": "Review React code",
+      "type": "skill"
+    },
+    {
+      "id": "deepseek-harness",
+      "name": "DeepSeek Harness",
+      "summary": "Explore a plugin-based desktop agent in developer preview.",
+      "apps": [
+        "DeepSeek Harness desktop"
+      ],
+      "tasks": [
+        "Explore an agent harness",
+        "Summarise local notes"
+      ],
+      "kind": "harness",
+      "sourceUrl": "https://github.com/deepseek-ai/deepseek-harness",
+      "setupSourceUrl": "https://github.com/deepseek-ai/deepseek-harness",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Start from DeepSeek's official Harness page and read the README and SAFETY.md before choosing a supported download.",
+        "Use a disposable practice workspace; configure an existing model with known billing in Settings > Models. Ask for a read-only summary of a fictional note. Expect a summary whose tool calls you can inspect."
+      ],
+      "requirements": [
+        "Supported desktop",
+        "Existing model access with known charges",
+        "Disposable environment"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "A bounded preview exercise",
+      "example": "Summarise one practice note without edits or command execution.",
+      "useWhen": "You want to inspect a plugin-based harness.",
+      "skipWhen": "You need production assurance or isolation guarantees.",
+      "hostBoundary": "Unaudited experimental software. Permissions do not guarantee isolation; advertised document/data/slides capabilities are not verified SkillLantern outcomes.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": "guides/deepseek-harness.html",
+      "publisher": "DeepSeek",
+      "setupHost": "DeepSeek Harness desktop",
+      "title": "DeepSeek Harness",
+      "task": "Explore an agent harness",
+      "type": "harness"
+    },
+    {
+      "id": "claude-appearance",
+      "name": "Claude appearance settings",
+      "summary": "Choose a more readable colour mode and chat font.",
+      "apps": [
+        "Claude web",
+        "Claude Desktop"
+      ],
+      "tasks": [
+        "Customise Claude",
+        "Improve reading comfort"
+      ],
+      "kind": "native setting",
+      "sourceUrl": "https://support.claude.com/en/articles/8887527-customizing-your-appearance-settings",
+      "setupSourceUrl": "https://support.claude.com/en/articles/8887527-customizing-your-appearance-settings",
+      "reviewedOn": "2026-11-21",
+      "setupSteps": [
+        "Open your name or initials, then Settings > Appearance (General in older layouts).",
+        "Choose Light, Dark or Match System; inspect Chat font options. Expect presentation changes in the chat interface."
+      ],
+      "requirements": [
+        "Claude account"
+      ],
+      "limitations": [
+        "Source review; native installation and task outcome not tested by SkillLantern."
+      ],
+      "outcome": "A personally readable chat view",
+      "example": "Use Match System and try the Dyslexic Friendly font.",
+      "useWhen": "You want to adjust reading presentation.",
+      "skipWhen": "You need to change model behavior.",
+      "hostBoundary": "Native presentation customization; not a plugin, reasoning mode or change to model capability.",
+      "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
+      "guidePath": null,
+      "publisher": "Anthropic",
+      "setupHost": "Claude web",
+      "title": "Claude appearance settings",
+      "task": "Customise Claude",
+      "type": "native setting"
+    }
+  ],
+  "guides": [
+    {
+      "path": "guides/website-upgrades.html",
+      "title": "Five upgrades for a website with personality, and real 3D",
+      "description": "Choose visual direction, real 3D, polish, motion or browser checks. Start with the task your page needs.",
+      "cardSummary": "A complete Codex handoff, a real 3D route and checks that matter.",
+      "category": "Website design",
+      "outcome": "website",
+      "coverKey": "website",
+      "hostLabel": "Codex CLI",
+      "requirements": [
+        "Codex CLI with skill support",
+        "Node/npm and Python 3.x",
+        "A website project you can safely edit",
+        "Browser and an appropriate Three.js renderer"
+      ],
+      "intro": "A distinctive site starts with clear choices. Use design guidance to settle the visual system, a dedicated Three.js skill for a real scene, and focused checks before adding more tools. These are independent options, not an install-everything bundle.",
+      "sections": [
+        {
+          "title": "Match the upgrade to the work",
+          "html": "<ul><li><strong>UI UX Pro Max:</strong> settle typography, colour and spacing. Skip when your design system already covers them.</li><li><strong>threejs-web:</strong> build a rendered scene with a camera and interaction. Skip when a still image communicates as well.</li><li><strong>Impeccable:</strong> critique and polish an existing interface. Start after you have a first draft.</li><li><strong>Motion Design:</strong> plan timing and state transitions. Use only where movement clarifies feedback.</li><li><strong>agent-browser:</strong> inspect layout and interactions when your assistant lacks browser tools.</li></ul>"
+        },
+        {
+          "title": "Start with a small pair",
+          "html": "<p>Our editorial starting pair is UI UX Pro Max plus <code>threejs-web</code>: visual direction and real interactive 3D. The selected 3D package is <a href=\"https://github.com/cesartevisual/threejs-skills\">cesartevisual/threejs-skills</a>, an independent community collection, with the exact <a href=\"https://github.com/cesartevisual/threejs-skills/blob/main/skills/threejs-web/SKILL.md\">threejs-web skill</a>. It is distinct from CloudAI-X/threejs-skills and is not official Three.js tooling.</p><p>Use the handoff below in your website project. Read proposed changes before accepting them. These instructions are for Codex CLI; ordinary ChatGPT web chat does not acquire local skills by pasting an installer command.</p>"
+        },
+        {
+          "title": "Copy this Codex handoff",
+          "prompt": "Prepare this website project for a distinctive interface with real interactive 3D.\nCheck Codex CLI skill support, Node/npm and Python 3 first.\nRead the canonical repositories and preserve existing project/config files.\nInstall only these two skills for this project, without global flags:\n1. nextlevelbuilder/ui-ux-pro-max-skill; skill ui-ux-pro-max:\n   npx ui-ux-pro-max-cli init --ai codex\n2. cesartevisual/threejs-skills; skill threejs-web:\n   npx skills add cesartevisual/threejs-skills --agent codex --skill threejs-web\nInspect .agents/skills and report what actually installed; reload if needed.\nDo not buy services, add optional packages or change the website yet.\nAsk for page purpose, audience and visual references before implementation."
+        },
+        {
+          "title": "Build and check one scene",
+          "html": "<ol><li>Confirm Codex sees both skills. Invoke <code>$ui-ux-pro-max</code> with the audience, purpose and owned references. Choose a direction before implementation.</li><li>Invoke <code>$threejs-web</code>: &quot;Build a rotatable lantern hero. Keep the main action in semantic HTML outside the canvas. Include loading and error states, reduced motion and a static fallback.&quot;</li><li>Preview it in the browser. Rotate the object, resize the page, navigate by keyboard and try the fallback. A tilted CSS card or screenshot does not prove a 3D interaction.</li><li>Ask for one targeted repair pass. Record what was exercised and what remains untested, including device/GPU coverage.</li></ol>"
+        },
+        {
+          "title": "Add only the capability you need next",
+          "html": "<p>For polish, follow <a href=\"https://github.com/pbakaus/impeccable\">Impeccable's setup</a>: <code>npx impeccable install --providers=codex --scope=project</code>, reload, then <code>$impeccable init</code>. Review offered hooks and telemetry; its engine cache lives outside the project. Audit results still need human accessibility review.</p><p>For motion, use <a href=\"https://github.com/LottieFiles/motion-design-skill\">Motion Design</a>: <code>npx skills add LottieFiles/motion-design-skill</code>, choose Codex/project scope, then <code>$motion-design</code>. It supplies guidance rather than requiring Lottie.</p><p>For browser checks, follow <a href=\"https://agent-browser.dev/installation\">agent-browser installation</a>: <code>npm install agent-browser</code>, then <code>npx agent-browser install</code> downloads Chrome. Its <a href=\"https://agent-browser.dev/skills\">companion skill</a> is a separate instruction layer. Existing browser tools may already suffice.</p><p><a href=\"https://github.com/DietrichGebert/ponytail/blob/main/INSTALL.md\">Ponytail</a> is an optional coding-workflow companion with host adapters and hooks, outside this visual starting pair.</p>"
+        },
+        {
+          "title": "A useful video companion",
+          "html": "<p>The existing website tutorial provides a clear briefing and iteration pattern: <a href=\"https://www.youtube.com/watch?v=VMvZuhcDdnw&t=362s\">brief and references - 06:02</a>, <a href=\"https://www.youtube.com/watch?v=VMvZuhcDdnw&t=954s\">review and polish - 15:54</a>, <a href=\"https://www.youtube.com/watch?v=VMvZuhcDdnw&t=1252s\">mobile pass - 20:52</a>. Our guide is an original, narrower workflow; the video's pricing, valuation and speed claims are not established here.</p>"
+        }
+      ],
+      "sources": [
+        {
+          "label": "UI UX Pro Max - canonical setup",
+          "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+        },
+        {
+          "label": "Three.js Skills - exact collection",
+          "url": "https://github.com/cesartevisual/threejs-skills"
+        }
+      ],
+      "checkedOn": "2026-11-21",
+      "evidence": "The original editorial sample and source notes were prepared 15 November 2026; canonical design repositories were refreshed 21 November. Setup, GPU behavior and generated design outcomes have not been hands-on tested by SkillLantern. Video coverage is prior caption review, not native reproduction. Open-source licences do not include agent subscriptions, paid assets or model charges."
+    },
+    {
+      "path": "guides/finance-upgrades.html",
+      "title": "Four Claude upgrades for clearer finance work",
+      "description": "Choose the workflow for a budget, messy export, vendor comparison or contract handoff, and practise on original synthetic files.",
+      "cardSummary": "Four task-specific plugins, native setup steps and a downloadable exercise with answer key.",
+      "category": "Finance and operations",
+      "outcome": "finance",
+      "coverKey": "finance",
+      "hostLabel": "Claude",
+      "requirements": [
+        "Paid Claude access and organisation permission",
+        "Claude web or Desktop Chat for the starter route",
+        "Original synthetic practice files below"
+      ],
+      "intro": "Turn a spreadsheet, supplier quote or contract into a structured draft you can check. Start with one plugin that fits today's task; add others only when the next job needs them.",
+      "sections": [
+        {
+          "title": "Choose by the question",
+          "html": "<ul><li><strong>Finance:</strong> variance analysis, reconciliation and accounting drafts. Choose it for clean accounting inputs.</li><li><strong>Data:</strong> CSV/Excel profiling, SQL, charts and dashboards. Choose it before analysis when you need to understand a messy export.</li><li><strong>Operations:</strong> vendor comparisons, process documentation and capacity planning. Ask for assumptions and switching effort alongside price.</li><li><strong>Legal:</strong> clause references, playbook deviations and contract questions for licensed counsel. Use the result as a review handoff.</li></ul>"
+        },
+        {
+          "title": "Add Finance in Claude",
+          "html": "<ol><li>Open <strong>Customize > Plugins > Discover</strong>. Find <strong>Finance by Anthropic</strong> and choose <strong>Add</strong>. Expect it to appear among your plugins. If it is missing, check the paid plan and organisation policy.</li><li>Start a fresh chat. Type <code>/</code>, or use <code>+</code>, and select the variance-analysis skill. Confirm the workflow is visible before continuing.</li><li>Attach the practice CSV and paste the prompt below. No bank, ERP or database connection is needed.</li></ol><p><a href=\"https://support.claude.com/en/articles/13837440-use-plugins-in-claude\">Official plugin help</a> covers web Chat, Desktop Chat and Cowork. Skills and commands work in chat; hooks and sub-agents run in Cowork or Claude Code. Account sync to Code requires a supported current version. Chat access does not imply every plugin component runs there.</p>"
+        },
+        {
+          "title": "Download the original practice pack",
+          "html": "<p><a class=\"button\" href=\"{{root}}downloads/finance/sample.csv\" download>Download budget CSV</a> <a href=\"{{root}}downloads/finance/expected-totals.json\" download>Download answer key</a></p><p>Made-up values in illustrative units, created by SkillLantern on 14 November 2026. The repeated E2 row is intentional. These are exercise expectations, not observed plugin results.</p>"
+        },
+        {
+          "title": "Copy this analysis prompt",
+          "prompt": "Check duplicate IDs first. Show repeated rows and deduplicate identical rows only.\nFrom sample.csv calculate budget and actual revenue, expenses and profit\n(revenue minus expenses), then show absolute and percentage profit variance.\nKeep the arithmetic visible. Explain only what these rows support.\nList missing information; do not invent price, volume or business drivers."
+        },
+        {
+          "title": "Check the answer before trusting the explanation",
+          "html": "<p>There are <strong>five raw rows, four unique rows and duplicate ID E2</strong>. Revenue is <strong>10,000 to 11,000</strong>; expenses <strong>6,000 to 6,500</strong>; profit <strong>4,000 to 4,500</strong>. Profit rises <strong>500 (+12.5%)</strong>. If the result differs, check duplicate handling and the sign of expenses. These inputs do not establish price or volume drivers.</p><p>For a second exercise, download <a href=\"{{root}}downloads/finance/bank.csv\" download>bank.csv</a> and <a href=\"{{root}}downloads/finance/ledger.csv\" download>ledger.csv</a>. In a fresh chat choose reconciliation and request unmatched IDs, mismatched amounts and net totals. Expected: <strong>T3 differs; bank net 500, ledger net 550; bank minus ledger -50</strong>.</p>"
+        },
+        {
+          "title": "Watch the task that matches your work",
+          "html": "<p>Nicolas Boucher's tutorial, published 12 November 2026: <a href=\"https://www.youtube.com/watch?v=i0Ctvmxczr4&t=80s\">Finance - 01:20</a>, <a href=\"https://www.youtube.com/watch?v=i0Ctvmxczr4&t=282s\">Data - 04:42</a>, <a href=\"https://www.youtube.com/watch?v=i0Ctvmxczr4&t=465s\">Operations - 07:45</a>, <a href=\"https://www.youtube.com/watch?v=i0Ctvmxczr4&t=531s\">Legal - 08:51</a>. Use these as demonstrations, not proof that your files or account will produce the same result.</p>"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Finance - official scope",
+          "url": "https://claude.com/marketplace/plugins/finance"
+        },
+        {
+          "label": "Data - official scope",
+          "url": "https://claude.com/marketplace/plugins/data"
+        },
+        {
+          "label": "Operations - official scope",
+          "url": "https://claude.com/marketplace/plugins/operations"
+        },
+        {
+          "label": "Legal - official scope",
+          "url": "https://claude.com/marketplace/plugins/legal"
+        }
+      ],
+      "checkedOn": "2026-11-21",
+      "evidence": "Official plugin help and all four marketplace scope pages checked 21 November 2026. Prior tutorial review used captions and sampled frames; no native installation or plugin exercise was run. Fixture arithmetic is independently checkable. Qualified finance staff should review consequential reporting; licensed counsel should review legal output. Account costs and allowances vary.",
+      "downloads": [
+        {
+          "label": "sample.csv",
+          "source": "content/fixtures/finance/sample.csv",
+          "path": "downloads/finance/sample.csv"
+        },
+        {
+          "label": "bank.csv",
+          "source": "content/fixtures/finance/bank.csv",
+          "path": "downloads/finance/bank.csv"
+        },
+        {
+          "label": "ledger.csv",
+          "source": "content/fixtures/finance/ledger.csv",
+          "path": "downloads/finance/ledger.csv"
+        },
+        {
+          "label": "expected-totals.json",
+          "source": "content/fixtures/finance/expected-totals.json",
+          "path": "downloads/finance/expected-totals.json"
+        }
+      ]
+    }
+  ]
+}
