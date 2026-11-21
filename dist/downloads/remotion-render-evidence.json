@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "recordedOn": "2026-11-22",
+  "kind": "bounded-composition-render",
+  "renderPassed": true,
+  "remotionVersion": "4.0.545",
+  "reactVersion": "19.3.1",
+  "nodeVersion": "24.14.0",
+  "renderCommand": "npx remotion render index.tsx HeroLoop hero-loop.mp4 --codec=h264 --concurrency=2",
+  "metadataCommand": "npx remotion ffprobe -v error -count_frames -select_streams v:0 -show_entries stream=codec_name,width,height,r_frame_rate,nb_read_frames:format=duration -of json hero-loop.mp4",
+  "metadata": {
+    "codec_name": "h264",
+    "width": 1280,
+    "height": 720,
+    "r_frame_rate": "30/1",
+    "nb_read_frames": "90",
+    "duration": "3.000000",
+    "audioStreams": 0
+  },
+  "bytes": 431581,
+  "sha256": "ba1916697dae8aee5600688958989be4d26edad1db6449ac8e4d7bddbc9a407b",
+  "sourceSha256": "bf90ed21484159109aaa5c3d27460baf635df07902f15bfbbb2af2347507b90c",
+  "nativeAgentSkillInstallationTested": false,
+  "comparativeSkillEffectivenessTested": false,
+  "scope": "Manually authored original composition rendered with the real Remotion CLI. Does not establish native agent-skill installation or skill effectiveness.",
+  "visualInspection": {
+    "posterFrame": 0,
+    "lastDecodedFrame": 89,
+    "result": "Both inspected: headline readable, cards within canvas. Full repeated playback not recorded."
+  }
+}

@@ -39,11 +39,20 @@
   "capabilities/claude-legal.html",
   "capabilities/notebook-research.html",
   "capabilities/claude-appearance.html",
+  "capabilities/frontend-design.html",
+  "capabilities/docx.html",
+  "capabilities/figma-official.html",
+  "capabilities/remotion-agent-skills.html",
+  "capabilities/claude-marketing.html",
   "guides/website-upgrades.html",
   "guides/finance-upgrades.html",
   "collections/design.html",
   "collections/development.html",
   "collections/writing.html",
   "collections/spreadsheets.html",
-  "guides/plugin-worth-it.html"
+  "guides/plugin-worth-it.html",
+  "guides/distinctive-design-figma.html",
+  "guides/notes-to-word-report.html",
+  "guides/marketing-launch-campaign.html",
+  "guides/remotion-hero-loop.html"
 ]

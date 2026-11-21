@@ -1,2 +1,3 @@
 # Frozen evidence hashes cover exact bytes, including reviewed line endings.
 public-evidence/** -text
+content/fixtures/remotion-hero/index.tsx text eol=lf

@@ -241,4 +241,5 @@ else:
     (DIST/'robots.txt').write_text('User-agent: *\nDisallow: /\n',encoding='utf-8')
     if (DIST/'sitemap.xml').exists(): (DIST/'sitemap.xml').unlink()
 (BASE/'page-manifest.json').write_text(json.dumps([p['path'] for p in pages],indent=2)+'\n',encoding='utf-8')
-print(f'Built {len(pages)} English pages and {len(SKILLS)} capabilities')
+published_capabilities=json.loads((DIST/'api/capabilities.json').read_text(encoding='utf-8'))
+print(f'Built {len(pages)} English pages and {len(published_capabilities["items"])} capabilities')

@@ -23,7 +23,7 @@ def render_guide(guide):
             parts.append(f'<button type="button" class="copy-button" data-copy-target="{target}">Copy prompt</button>'
                          f'<pre class="code-block"><code id="{target}">{e(section["prompt"])}</code></pre>')
         parts.append('</section>')
-    parts.append(f'<details open><summary>Sources and review coverage · {e(guide["checkedOn"])}</summary><ul>')
+    parts.append(f'<details><summary>Sources and review coverage · {e(guide["checkedOn"])}</summary><ul>')
     for source in guide['sources']:
         parts.append(f'<li><a href="{e(source["url"], quote=True)}">{e(source["label"])}</a></li>')
     parts.append(f'</ul><p>{e(guide["evidence"])}</p></details></article>')

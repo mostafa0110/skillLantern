@@ -36,7 +36,19 @@ def prepare_pages(dist, routes, origin):
     js.write_text(text.replace(old, new), encoding='utf-8')
 
 
+def require_production_origin():
+    """Prevent the public Workers main build from silently becoming private."""
+    if (os.environ.get('WORKERS_CI') == '1' and
+            os.environ.get('WORKERS_CI_BRANCH') == 'main' and
+            not os.environ.get('SKILLLANTERN_PUBLIC_ORIGIN', '').strip()):
+        raise ValueError(
+            'Production Workers main build requires SKILLLANTERN_PUBLIC_ORIGIN. '
+            'Set this build variable to the existing public HTTPS origin in '
+            'Cloudflare Workers build settings, then rebuild.')
+
+
 def main():
+    require_production_origin()
     base = Path(__file__).resolve().parent
     output = base / 'pages-dist'
     with tempfile.TemporaryDirectory(prefix='skilllantern-pages-') as temporary:

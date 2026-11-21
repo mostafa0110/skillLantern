@@ -14,8 +14,11 @@ The build still writes `pages-dist/`; its clean URLs match Workers' default
 custom domains; retain the existing production domain in Cloudflare's Worker
 settings. Set `SKILLLANTERN_PUBLIC_ORIGIN` to that exact HTTPS origin in the
 production build environment for the intended canonical URLs and indexing.
+Workers CI builds on `main` now stop before building when that variable is
+missing; set it in Cloudflare Workers build variables and rebuild.
 Workers builds do not supply the Pages-specific `CF_PAGES_URL` preview variable;
-leave the public-origin variable unset for builds intended to remain noindex.
+leave the public-origin variable unset for local or non-main builds intended
+to remain noindex.
 Git pushes can trigger deployment through the existing connection.
 
 Configuration follows Cloudflare's [static assets configuration](https://developers.cloudflare.com/workers/static-assets/binding/)

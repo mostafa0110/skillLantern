@@ -455,7 +455,7 @@
       "skipWhen": "A one-sentence edit is enough.",
       "hostBoundary": "Official Anthropic skill instructions; availability and installation differ by Claude host. Simulated reader review is not human validation. The concrete setup shown uses Claude Code; Claude web has separate native availability and account permissions.",
       "evidenceSummary": "Primary documentation reviewed; an editorial selection, not a benchmark.",
-      "guidePath": null,
+      "guidePath": "guides/notes-to-word-report.html",
       "publisher": "Anthropic",
       "setupHost": "Claude Code",
       "title": "Doc Coauthoring",
@@ -703,6 +703,219 @@
       "title": "Claude appearance settings",
       "task": "Customise Claude",
       "type": "native setting"
+    },
+    {
+      "id": "frontend-design",
+      "name": "Frontend Design",
+      "summary": "Give a new interface a visual direction grounded in its subject and audience.",
+      "apps": [
+        "Claude Code"
+      ],
+      "tasks": [
+        "Design a website",
+        "Choose visual direction"
+      ],
+      "kind": "skill",
+      "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+      "setupSourceUrl": "https://github.com/anthropics/skills#try-in-claude-code-claudeai-and-the-api",
+      "reviewedOn": "2026-11-22",
+      "evidenceStatus": "source-reviewed",
+      "setupSteps": [
+        "Register anthropics/skills in Claude Code with /plugin marketplace add anthropics/skills.",
+        "Install example-skills@anthropic-agent-skills, then ask for frontend-design with your audience, content and main action."
+      ],
+      "requirements": [
+        "Eligible Claude Code access",
+        "A practice project and owned reference material"
+      ],
+      "limitations": [
+        "Source reviewed; installation and task results have not been tested by SkillLantern."
+      ],
+      "outcome": "An intentional interface direction",
+      "example": "Plan two directions for a workshop page before building one.",
+      "useWhen": "You need design choices for a new page.",
+      "skipWhen": "An existing design system already decides the visual treatment.",
+      "hostBoundary": "This route installs the example-skills collection. It provides guidance, not Figma access or a design-quality guarantee.",
+      "evidenceSummary": "First-party instructions reviewed 22 November 2026; editorial selection, not a benchmark.",
+      "guidePath": "guides/distinctive-design-figma.html",
+      "publisher": "Anthropic",
+      "setupHost": "Claude Code",
+      "title": "Frontend Design",
+      "task": "Design a website",
+      "type": "skill"
+    },
+    {
+      "id": "docx",
+      "name": "DOCX",
+      "summary": "Create or revise a Word document with headings, tables and a layout you can inspect.",
+      "apps": [
+        "Claude Code"
+      ],
+      "tasks": [
+        "Create a Word report",
+        "Format a document"
+      ],
+      "kind": "skill",
+      "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/docx/SKILL.md",
+      "setupSourceUrl": "https://github.com/anthropics/skills#try-in-claude-code-claudeai-and-the-api",
+      "reviewedOn": "2026-11-22",
+      "evidenceStatus": "source-reviewed",
+      "setupSteps": [
+        "Register anthropics/skills, then install document-skills@anthropic-agent-skills in Claude Code.",
+        "Ask for DOCX using approved text. Review proposed tooling, then open the exported file and inspect each page."
+      ],
+      "requirements": [
+        "Eligible Claude Code access",
+        "Approved source text",
+        "Document tooling required by the selected workflow"
+      ],
+      "limitations": [
+        "Source reviewed; installation and task results have not been tested by SkillLantern."
+      ],
+      "outcome": "A formatted Word handoff",
+      "example": "Turn approved project notes into a two-page report.",
+      "useWhen": "You need an editable Word deliverable.",
+      "skipWhen": "A plain text draft is enough.",
+      "hostBoundary": "The local route installs a document-skills collection. File tooling and rendering must work in your environment; do not assume dependencies are preinstalled.",
+      "evidenceSummary": "First-party instructions reviewed 22 November 2026; editorial selection, not a benchmark.",
+      "guidePath": "guides/notes-to-word-report.html",
+      "publisher": "Anthropic",
+      "setupHost": "Claude Code",
+      "title": "DOCX",
+      "task": "Create a Word report",
+      "type": "skill"
+    },
+    {
+      "id": "figma-official",
+      "name": "Figma official integration",
+      "summary": "Bring frame layout, components and design tokens into an implementation task.",
+      "apps": [
+        "Claude Code"
+      ],
+      "tasks": [
+        "Implement a Figma design",
+        "Read design context"
+      ],
+      "kind": "plugin",
+      "sourceUrl": "https://claude.com/marketplace/plugins/figma",
+      "setupSourceUrl": "https://github.com/figma/mcp-server-guide",
+      "reviewedOn": "2026-11-22",
+      "evidenceStatus": "source-reviewed",
+      "setupSteps": [
+        "Follow Figma's Claude Code route: claude plugin install figma@claude-plugins-official.",
+        "Authenticate with Figma, share an authorised frame URL and request its design context before implementation."
+      ],
+      "requirements": [
+        "Claude Code",
+        "Figma account and access to the chosen file",
+        "Available Figma MCP allowance"
+      ],
+      "limitations": [
+        "Source reviewed; installation and task results have not been tested by SkillLantern."
+      ],
+      "outcome": "A page implementation informed by its Figma frame",
+      "example": "Implement one authorised frame using the project's existing components.",
+      "useWhen": "You already have a Figma reference to implement.",
+      "skipWhen": "You only need to invent a visual direction.",
+      "hostBoundary": "This profile covers the official Claude Code plugin, not an arbitrary similarly named skill. Figma seat limits and authentication apply; other clients have separate setup routes.",
+      "evidenceSummary": "First-party instructions reviewed 22 November 2026; editorial selection, not a benchmark.",
+      "guidePath": "guides/distinctive-design-figma.html",
+      "publisher": "Figma",
+      "setupHost": "Claude Code",
+      "title": "Figma official integration",
+      "task": "Implement a Figma design",
+      "type": "plugin"
+    },
+    {
+      "id": "remotion-agent-skills",
+      "name": "Remotion Agent Skills",
+      "summary": "Create a short motion composition with timing and rendering guidance.",
+      "apps": [
+        "Claude Code",
+        "Codex CLI"
+      ],
+      "tasks": [
+        "Create a hero loop",
+        "Motion",
+        "Design"
+      ],
+      "kind": "skill",
+      "sourceUrl": "https://www.remotion.dev/docs/ai/skills",
+      "setupSourceUrl": "https://www.remotion.dev/docs/ai/skills",
+      "reviewedOn": "2026-11-22",
+      "evidenceStatus": "source-reviewed",
+      "setupSteps": [
+        "In an existing Remotion project, review then run npx remotion skills add.",
+        "Alternative: npx skills add remotion-dev/skills; choose the intended agent and project scope.",
+        "Ask for one short composition, preview it and inspect the rendered result."
+      ],
+      "requirements": [
+        "Coding agent",
+        "Node.js and an existing Remotion project",
+        "Owned or licensed visual assets"
+      ],
+      "limitations": [
+        "Installation, rendering and task outcomes have not been tested by SkillLantern.",
+        "Check current Remotion licensing and your agent costs for your use."
+      ],
+      "outcome": "A short website motion loop",
+      "example": "Animate a product detail with a still fallback.",
+      "useWhen": "A timed sequence adds useful context to a page.",
+      "skipWhen": "A static image communicates the same idea.",
+      "hostBoundary": "These are Remotion project skills, not ordinary website CSS animation. Claude Code and Codex are documented hosts; local packages and rendering tools must work separately.",
+      "evidenceSummary": "Official Remotion documentation reviewed 22 November 2026; not a rendering trial.",
+      "guidePath": "guides/remotion-hero-loop.html",
+      "publisher": "Remotion",
+      "setupHost": "Existing Remotion project",
+      "title": "Remotion Agent Skills",
+      "task": "Create a hero loop",
+      "type": "skill"
+    },
+    {
+      "id": "claude-marketing",
+      "name": "Marketing by Anthropic",
+      "summary": "Plan a campaign and draft content from an approved audience, offer and brief.",
+      "apps": [
+        "Claude web chat",
+        "Claude Desktop Chat",
+        "Claude Cowork",
+        "Claude Code"
+      ],
+      "tasks": [
+        "Plan a campaign",
+        "Draft marketing content",
+        "Marketing"
+      ],
+      "kind": "plugin",
+      "sourceUrl": "https://claude.com/marketplace/plugins/marketing",
+      "setupSourceUrl": "https://support.claude.com/en/articles/13837440-use-plugins-in-claude",
+      "reviewedOn": "2026-11-22",
+      "evidenceStatus": "source-reviewed",
+      "setupSteps": [
+        "Open Customize > Plugins > Discover, find Marketing by Anthropic and choose Add.",
+        "Start a fresh chat, attach your approved brief and find the relevant skill through the / or + menu. Review the campaign plan before drafting content."
+      ],
+      "requirements": [
+        "Paid Claude plan",
+        "Organisation permission to add plugins",
+        "Approved offer and audience notes"
+      ],
+      "limitations": [
+        "Installation and campaign results have not been tested by SkillLantern.",
+        "Review facts, brand claims and permissions before sharing output."
+      ],
+      "outcome": "A campaign plan and reviewable first draft",
+      "example": "Plan one campaign from an approved offer without invented testimonials.",
+      "useWhen": "Your audience and offer are clear enough to guide a campaign.",
+      "skipWhen": "You still need evidence of audience demand.",
+      "hostBoundary": "This profile shows Claude web chat setup. Cowork and Claude Code have separate command routes. Connectors are optional for the pasted-text exercise.",
+      "evidenceSummary": "Official Anthropic marketplace, repository and help reviewed 22 November 2026; no campaign reproduction.",
+      "guidePath": "guides/marketing-launch-campaign.html",
+      "publisher": "Anthropic",
+      "setupHost": "Claude web chat",
+      "title": "Marketing by Anthropic",
+      "task": "Plan a campaign",
+      "type": "plugin"
     }
   ],
   "guides": [
@@ -744,8 +957,8 @@
           "html": "<p>For polish, follow <a href=\"https://github.com/pbakaus/impeccable\">Impeccable's setup</a>: <code>npx impeccable install --providers=codex --scope=project</code>, reload, then <code>$impeccable init</code>. Review offered hooks and telemetry; its engine cache lives outside the project. Audit results still need human accessibility review.</p><p>For motion, use <a href=\"https://github.com/LottieFiles/motion-design-skill\">Motion Design</a>: <code>npx skills add LottieFiles/motion-design-skill</code>, choose Codex/project scope, then <code>$motion-design</code>. It supplies guidance rather than requiring Lottie.</p><p>For browser checks, follow <a href=\"https://agent-browser.dev/installation\">agent-browser installation</a>: <code>npm install agent-browser</code>, then <code>npx agent-browser install</code> downloads Chrome. Its <a href=\"https://agent-browser.dev/skills\">companion skill</a> is a separate instruction layer. Existing browser tools may already suffice.</p><p><a href=\"https://github.com/DietrichGebert/ponytail/blob/main/INSTALL.md\">Ponytail</a> is an optional coding-workflow companion with host adapters and hooks, outside this visual starting pair.</p>"
         },
         {
-          "title": "A useful video companion",
-          "html": "<p>The existing website tutorial provides a clear briefing and iteration pattern: <a href=\"https://www.youtube.com/watch?v=VMvZuhcDdnw&t=362s\">brief and references - 06:02</a>, <a href=\"https://www.youtube.com/watch?v=VMvZuhcDdnw&t=954s\">review and polish - 15:54</a>, <a href=\"https://www.youtube.com/watch?v=VMvZuhcDdnw&t=1252s\">mobile pass - 20:52</a>. Our guide is an original, narrower workflow; the video's pricing, valuation and speed claims are not established here.</p>"
+          "title": "Brief, iterate and check mobile",
+          "html": "<details><summary>Related walkthrough and review limits</summary><p>For examples of briefing and iteration, see <a href=\"https://www.youtube.com/watch?v=VMvZuhcDdnw&t=362s\">brief and references - 06:02</a>, <a href=\"https://www.youtube.com/watch?v=VMvZuhcDdnw&t=954s\">review and polish - 15:54</a>, <a href=\"https://www.youtube.com/watch?v=VMvZuhcDdnw&t=1252s\">mobile pass - 20:52</a>. This guide uses an original, narrower workflow. The creator's pricing, valuation and speed claims are not established here.</p></details>"
         }
       ],
       "sources": [

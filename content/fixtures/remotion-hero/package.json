@@ -1,0 +1,16 @@
+{
+  "name": "skilllantern-remotion-hero-practice",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio index.tsx",
+    "render": "remotion render index.tsx HeroLoop hero-loop.mp4 --codec=h264",
+    "poster": "remotion still index.tsx HeroLoop hero-loop-poster.png --frame=0"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.545",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.545"
+  }
+}
