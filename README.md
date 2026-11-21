@@ -1,5 +1,28 @@
 # SkillLantern website
 
+## Cloudflare Workers Git build · 22 November 2026
+
+The Git-connected Worker is named `skilllantern`. With this website directory as
+the repository root, set the build command to `python3 build_cloudflare.py` and
+the deploy command to `npx wrangler deploy`. The existing
+`npx wrangler deploy --assets ./pages-dist` command also uses the checked-in
+`wrangler.toml`, which supplies the Worker name, compatibility date and assets
+directory. No Worker script or runtime bindings are needed for this static site.
+
+The build still writes `pages-dist/`; its clean URLs match Workers' default
+`auto-trailing-slash` HTML handling. The configuration does not define routes or
+custom domains; retain the existing production domain in Cloudflare's Worker
+settings. Set `SKILLLANTERN_PUBLIC_ORIGIN` to that exact HTTPS origin in the
+production build environment for the intended canonical URLs and indexing.
+Workers builds do not supply the Pages-specific `CF_PAGES_URL` preview variable;
+leave the public-origin variable unset for builds intended to remain noindex.
+Git pushes can trigger deployment through the existing connection.
+
+Configuration follows Cloudflare's [static assets configuration](https://developers.cloudflare.com/workers/static-assets/binding/)
+and [HTML handling](https://developers.cloudflare.com/workers/static-assets/routing/advanced/html-handling/)
+documentation, checked on 22 November 2026. The following Pages instructions
+describe the alternative Pages hosting setup.
+
 ## Cloudflare Pages Git build · 21 November 2026
 
 For a GitHub repository whose root is this website directory, use Pages **Git
