@@ -1,5 +1,36 @@
 # SkillLantern website
 
+## Cloudflare Pages Git build · 21 November 2026
+
+For a GitHub repository whose root is this website directory, use Pages **Git
+integration**, framework **None**, root directory blank, build command
+`python3 build_cloudflare.py`, output directory `pages-dist`, build image **v3**.
+The tracked `.python-version` selects Python 3.13.3 (the build requires 3.12+).
+[Cloudflare build image documentation](https://developers.cloudflare.com/pages/configuration/build-image/)
+was checked on 21 November 2026. No third-party Python packages are needed.
+
+The command builds from an isolated temporary copy using bundled evidence and
+leaves ordinary `dist/` and `page-manifest.json` unchanged. `pages-dist/` is ignored.
+It aligns canonical/OG URLs and sitemap entries with Pages clean URLs while
+retaining `.html` source files for Pages routing.
+
+Leave `SKILLLANTERN_PUBLIC_ORIGIN` unset for preview-safe noindex/robots output.
+Cloudflare previews use `CF_PAGES_URL` for their canonical origin while retaining
+noindex and disallowed robots; local builds without it retain the private origin.
+For an authorised public production build, set it to the actual HTTPS production
+origin (the assigned `https://YOUR-PROJECT.pages.dev` is sufficient, or your configured
+custom domain) in the Production environment only; keep Preview unset. This environment variable
+controls indexing metadata, not access restrictions or publication permission.
+Review build/deployment controls before connecting Git: Git pushes can trigger
+deployments. These local changes do not connect GitHub or deploy anything.
+
+The `public-evidence/** -text` Git attribute preserves pinned evidence bytes on
+Windows and Linux. When preparing the next authorised source commit, stage the
+attribute first (`git add .gitattributes`), then force evidence re-staging
+with `git add --renormalize -- public-evidence`;
+this records the current reviewed bytes rather than older normalized index blobs.
+Do not regenerate integrity hashes to accommodate newline transformations.
+
 English-first static product. Root coordinates hosting and publishing; source edits do not
 change audience. Navigation is Explore, Guides, Popular and My setup. Visitors search by task,
 filter by app/task/kind, read stable capability profiles, save a shortlist locally and copy or

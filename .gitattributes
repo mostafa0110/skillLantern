@@ -1,0 +1,2 @@
+# Frozen evidence hashes cover exact bytes, including reviewed line endings.
+public-evidence/** -text
