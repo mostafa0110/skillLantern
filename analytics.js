@@ -11,7 +11,7 @@
   if (location.origin !== origin || !page || normalize(location.pathname) !== normalize(page)) return;
   const safeURL = value => {
     if (!value) return true;
-    try { const url = new URL(value); return /^https?:$/.test(url.protocol) && !url.search && !url.hash && !url.username && !url.password; }
+    try { const url = new URL(value); return /^https?:$/.test(url.protocol) && !url.search && !url.hash && !url.username && !url.password && (url.origin === origin || url.pathname === '/'); }
     catch { return false; }
   };
   // Google can inspect the actual URL independently of event overrides. Never
@@ -70,6 +70,11 @@
     window.gtag = function () { window.dataLayer.push(arguments); };
     gtag('consent', 'default', {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
     gtag('consent', 'update', {analytics_storage: 'granted'});
+    let referrer = '';
+    if (document.referrer) { const url = new URL(document.referrer); if (url.origin !== origin) referrer = url.origin + '/'; }
+    // Apply defaults before the library starts: stream-injected automatic page
+    // views can otherwise race config and duplicate the explicit page view.
+    gtag('set', {send_page_view: false, page_location: origin + page, page_referrer: referrer, page_title: pageTitle});
     gtag('js', new Date());
     // Stream Enhanced Measurement must also be disabled in the GA console.
     gtag('config', id, {send_page_view: false, allow_google_signals: false, allow_ad_personalization_signals: false, page_location: origin + page, page_referrer: '', page_title: pageTitle});
@@ -80,8 +85,6 @@
     document.head.append(tag);
     if (!sentPage) {
       sentPage = true;
-      let referrer = '';
-      if (document.referrer) { const url = new URL(document.referrer); if (url.origin !== origin) referrer = url.origin + '/'; }
       gtag('event', 'page_view', {page_location: origin + page, page_referrer: referrer, page_title: pageTitle});
     }
   }
