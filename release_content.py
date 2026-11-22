@@ -20,7 +20,7 @@ def render_guide(guide):
             parts.append(section['html'])
         if 'prompt' in section:
             target = Path(guide['path']).stem + '-prompt-' + str(i)
-            parts.append(f'<button type="button" class="copy-button" data-copy-target="{target}">Copy prompt</button>'
+            parts.append(f'<button type="button" class="copy-button" data-guide-action="copy_brief" data-copy-target="{target}">Copy prompt</button>'
                          f'<pre class="code-block"><code id="{target}">{e(section["prompt"])}</code></pre>')
         parts.append('</section>')
     parts.append(f'<details><summary>Sources and review coverage · {e(guide["checkedOn"])}</summary><ul>')

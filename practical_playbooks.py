@@ -9,9 +9,10 @@ ROOT = 'https://github.com/anthropics/skills'
 def command(text):
     target = 'playbook-' + hashlib.sha256(text.encode()).hexdigest()[:12]
     if text.startswith('/plugin'):
-        return ''.join(command(line) for line in text.splitlines()) if '\n' in text else '<button type="button" class="copy-button" data-copy-target="'+target+'">Copy command</button><pre class="code-block"><code id="'+target+'">'+e(text)+'</code></pre>'
+        return ''.join(command(line) for line in text.splitlines()) if '\n' in text else '<button type="button" class="copy-button" data-guide-action="copy_command" data-copy-target="'+target+'">Copy command</button><pre class="code-block"><code id="'+target+'">'+e(text)+'</code></pre>'
     label = 'Copy command' if text.startswith('claude plugin') else 'Copy starter brief'
-    return '<button type="button" class="copy-button" data-copy-target="'+target+'">'+label+'</button><pre class="code-block"><code id="'+target+'">'+e(text)+'</code></pre>'
+    action = 'copy_command' if text.startswith('claude plugin') else 'copy_brief'
+    return '<button type="button" class="copy-button" data-guide-action="'+action+'" data-copy-target="'+target+'">'+label+'</button><pre class="code-block"><code id="'+target+'">'+e(text)+'</code></pre>'
 
 
 def sources(items):

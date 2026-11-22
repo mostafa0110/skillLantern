@@ -47,6 +47,14 @@
     dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()});
   }
   if(params.has('skill'))openSkill(params.get('skill'));
+  const isGuide=/(?:^|\/)guides\/[^/]+(?:\.html)?\/?$/.test(location.pathname);
+  const guideAction=action=>document.dispatchEvent(new CustomEvent('skilllantern:guide-action',{detail:{action}}));
+  document.addEventListener('click',event=>{
+    const link=event.target.closest('a[data-guide-action="download_source"][download]');
+    if(!isGuide||!link||event.defaultPrevented||event.button>=1)return;
+    const url=new URL(link.href,location.href);
+    if(url.origin===location.origin&&/\/downloads\/(remotion-hero-source|motion-design-demo|motion-design-skill)\.zip$/.test(url.pathname))guideAction('download_source');
+  });
   document.querySelectorAll('[data-copy-target]').forEach(button=>button.addEventListener('click',async()=>{
     const target=document.getElementById(button.dataset.copyTarget);if(!target)return;
     const text=target.textContent,original=button.textContent;let copied=false;
@@ -54,6 +62,7 @@
       const area=document.createElement('textarea');area.value=text;area.className='sr-only';document.body.append(area);area.select();
       try{copied=document.execCommand('copy')}catch{}area.remove();button.focus();
     }
+    if(copied&&isGuide&&['copy_command','copy_brief'].includes(button.dataset.guideAction))guideAction(button.dataset.guideAction);
     button.textContent=copied?(document.documentElement.lang==='ar'?'تم النسخ':'Copied'):'Select the prompt and copy';
     if(!copied){const range=document.createRange();range.selectNodeContents(target);const selection=getSelection();selection.removeAllRanges();selection.addRange(range)}
     setTimeout(()=>button.textContent=original,2500);

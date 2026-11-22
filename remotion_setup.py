@@ -33,7 +33,8 @@ def link(url, title):
 
 
 def command(ident, text, label='Copy command'):
-    return '<pre><code id="'+ident+'">'+escape(text)+'</code></pre><button class="button secondary" type="button" data-copy-target="'+ident+'">'+label+'</button>'
+    action = 'copy_brief' if ident == 'rm-brief' else 'copy_command'
+    return '<pre><code id="'+ident+'">'+escape(text)+'</code></pre><button class="button secondary" type="button" data-guide-action="'+action+'" data-copy-target="'+ident+'">'+label+'</button>'
 
 
 def add_remotion_setup(pages):
@@ -55,7 +56,7 @@ def add_remotion_setup(pages):
 <p>Choose one installation route. These commands fetch current upstream files. In PowerShell, use <code>npx.cmd</code> if script execution policy blocks <code>npx</code>. Select a relevant skill from your host’s menu, or explicitly ask it to use the installed Remotion skills. Exact invocation depends on the host.</p></section>
 <section id="brief"><h2>2. Give the agent a bounded brief</h2><p>Paste this in your project’s agent session. It asks for a decorative website asset with a readable still state.</p>'''+command('rm-brief', PROMPT, 'Copy project brief')+'''
 <p>Begin with the umbrella skill <code>remotion-best-practices</code> when unsure which specific skill to use. Review the generated composition before running it.</p></section>
-<section id="example"><h2>3. Run the supplied example</h2><p>Want a known starting point? The source download contains our original composition and a small package manifest. Extract it to a new folder, open a terminal there, then install dependencies and render. It is separate from the agent-skill installation above.</p><p><a class="button" href="{{root}}downloads/remotion-hero-source.zip" download>Download example source</a></p>'''+command('rm-example-install', 'npm install')+command('rm-example-render', 'npm run render')+command('rm-example-poster', 'npm run poster')+'''
+<section id="example"><h2>3. Run the supplied example</h2><p>Want a known starting point? The source download contains our original composition and a small package manifest. Extract it to a new folder, open a terminal there, then install dependencies and render. It is separate from the agent-skill installation above.</p><p><a class="button" href="{{root}}downloads/remotion-hero-source.zip" data-guide-action="download_source" download>Download example source</a></p>'''+command('rm-example-install', 'npm install')+command('rm-example-render', 'npm run render')+command('rm-example-poster', 'npm run poster')+'''
 <details><summary>Use the composition in an existing project</summary><p>Copy the downloaded <code>index.tsx</code> to <code>src/hero-loop.tsx</code> without replacing your existing entry file. It registers its own root. Render it directly:</p>'''+command('rm-render-existing', 'npx remotion render src/hero-loop.tsx HeroLoop out/hero-loop.mp4 --codec=h264')+'''</details>
 <p>The example keeps its headline static while three cards move with a sine/cosine phase derived from the frame number. Its phase repeats every 90 frames; the hypothetical frame 90 matches frame 0. Frame 89 should flow into frame 0, not duplicate it.</p></section>
 <section id="verify"><h2>4. Verify the export and the loop</h2>'''+measured+'''

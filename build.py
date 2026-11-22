@@ -14,6 +14,10 @@ if PUBLIC_ORIGIN:
     parsed_origin=urlsplit(PUBLIC_ORIGIN)
     if parsed_origin.scheme!="https" or not parsed_origin.netloc or parsed_origin.path or parsed_origin.query or parsed_origin.fragment or parsed_origin.username or parsed_origin.password:
         raise ValueError("SKILLLANTERN_PUBLIC_ORIGIN must be an HTTPS origin without a path or credentials")
+# Analytics is deliberately absent from private, branch-preview and local builds.
+ANALYTICS_ENABLED = (PUBLIC_ORIGIN == "https://skilllantern.app"
+    and not (os.environ.get("WORKERS_CI") == "1" and os.environ.get("WORKERS_CI_BRANCH") != "main")
+    and not (os.environ.get("CF_PAGES") and os.environ.get("CF_PAGES_BRANCH") != "main"))
 SITE_ORIGIN=PUBLIC_ORIGIN or "https://skilllantern.happymoth22.chatgpt.site"
 
 BASE = Path(__file__).resolve().parent
@@ -100,6 +104,16 @@ def wrap(page):
     wordmark=f'<img src="{root}assets/logo.svg" width="34" height="44" alt=""><span>SkillLantern</span>'
     title=esc(page['title']); description=esc(page['description'])
     html=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title} · SkillLantern</title><meta name="description" content="{description}"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#151b1a"><meta property="og:title" content="{title} · SkillLantern"><meta property="og:description" content="{description}"><meta property="og:type" content="website"><meta property="og:url" content="https://skilllantern.happymoth22.chatgpt.site/{page["path"]}"><link rel="canonical" href="https://skilllantern.happymoth22.chatgpt.site/{page["path"]}"><link rel="icon" href="{root}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{root}assets/site.css"><link rel="stylesheet" href="{root}assets/app.css"><script defer src="{root}assets/skills-data.js"></script><script defer src="{root}assets/product-data.js"></script><script defer src="{root}assets/popular-data.js"></script><script defer src="{root}assets/app.js"></script><link rel="stylesheet" href="{root}assets/discovery.css"><script defer src="{root}assets/discovery.js"></script>{'<script defer src="'+root+'assets/lantern.js"></script>' if page.get('lantern') else ''}{'<script defer src="'+root+'assets/installer.js"></script>' if page.get('installer') else ''}</head><body data-root="{root}"><a class="skip-link" href="#main">Skip to content</a><div class="shell"><header class="site-header"><a class="brand" href="{root}index.html" aria-label="SkillLantern home">{wordmark}</a><button class="menu-button" id="menu-button" type="button" aria-controls="site-nav" aria-expanded="false" hidden>Menu</button><nav class="site-nav" id="site-nav" aria-label="Main navigation">{nav}</nav></header><main id="main">{page['body'].replace('{{root}}',root)}</main><footer class="site-footer"><div><a class="brand" href="{root}index.html">{wordmark}</a><p>A clearer path from AI possibility to useful work.</p></div><nav aria-label="Footer"><a href="{root}about.html">About &amp; privacy</a><a href="{root}skills.html">Explore capabilities</a><a href="{root}comparisons.html">Test comparison</a><a href="{root}how-we-test.html">Evidence policy</a><details class="motion-settings"><summary>Motion settings</summary><label><input id="reduce-motion" type="checkbox"> Reduce animation</label></details></nav></footer></div><dialog class="dialog" id="skill-dialog" aria-labelledby="skill-dialog-title"><button class="dialog-close" type="button" aria-label="Close source note">×</button><div id="skill-dialog-content"></div></dialog></body></html>'''
+    if ANALYTICS_ENABLED:
+        route = '/' + page['path'].removesuffix('.html')
+        if route == '/index': route = '/'
+        analytics = (f'<link rel="stylesheet" href="{root}assets/analytics.css">'
+                     f'<script defer src="{root}assets/analytics.js" data-page="{esc(route)}" data-page-title="{title}"></script>')
+        html = html.replace('</head>', analytics + '</head>')
+        if page['path'] == 'about.html':
+            privacy = ('<h2>Optional Google Analytics</h2><p>On our production site, Google Analytics 4 loads only after you choose Allow analytics. It uses first-party analytics cookies to count visits and guide actions (copy command, copy brief and source download). Google receives a page path, a fixed guide identifier and action, and where safe the referring website origin. We exclude search text, URL parameters and copied or downloaded contents. Search, editing and unsafe URL pages are not measured.</p><p>Choose Decline analytics to keep it off. Open Analytics settings in the footer to change or revoke your saved browser choice; revoking disables analytics and removes accessible Google Analytics cookies. Consent preferences are saved locally when browser storage is available; otherwise the choice applies to this page only. Google may process technical connection information such as IP address; analytics does not give us a list of individual visitors. Cloudflare hosting and its operational traffic logs are separate from this optional analytics choice.</p><p>Analytics notice updated 22 November 2026.</p>')
+            html = html.replace('<h2>Original creators stay visible</h2>', privacy + '<h2>Original creators stay visible</h2>')
+        html = html.replace('<details class="motion-settings">', '<button type="button" class="inline-button" id="analytics-settings" aria-controls="analytics-choice" aria-expanded="false">Analytics settings</button><details class="motion-settings">')
     html=html.replace('https://skilllantern.happymoth22.chatgpt.site',SITE_ORIGIN)
     if PUBLIC_ORIGIN: html=html.replace('name="robots" content="noindex,nofollow"','name="robots" content="index,follow"')
     target=DIST/path; target.parent.mkdir(parents=True,exist_ok=True); target.write_text(html,encoding='utf-8')
@@ -243,3 +257,10 @@ else:
 (BASE/'page-manifest.json').write_text(json.dumps([p['path'] for p in pages],indent=2)+'\n',encoding='utf-8')
 published_capabilities=json.loads((DIST/'api/capabilities.json').read_text(encoding='utf-8'))
 print(f'Built {len(pages)} English pages and {len(published_capabilities["items"])} capabilities')
+
+for name in ('analytics.js', 'analytics.css'):
+    target = DIST / 'assets' / name
+    if ANALYTICS_ENABLED:
+        shutil.copyfile(BASE / name, target)
+    elif target.exists():
+        target.unlink()
